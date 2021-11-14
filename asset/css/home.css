@@ -1,7 +1,7 @@
 #history1 .introduce {
     width: 1920px;
     height: 675px;
-    background-image: url("/asset/images/Content-images-background.png");
+    background-image: url("https://github.com/lomiPM/content/blob/master/asset/images/Content-images-background.png");
 }
 
 #history1 .inner {
@@ -87,7 +87,7 @@
 #history1 .drop-image {
     width: 1920px;
     height: 225px;
-    background-image: url("/asset/images/bg-curve3-1903x98.png");
+    background-image: url("https://github.com/lomiPM/content/blob/master/asset/images/bg-curve3-1903x98.png");
     margin-top: 210px;
     margin-bottom: 20px;
 }
@@ -95,7 +95,7 @@
 #history1 .drop-image-content {
     width: 1920px;
     height: 225px;
-    background-image: url("/asset/images/bg-curve3-1903x98.png");
+    background-image: url("https://github.com/lomiPM/content/blob/master/asset/images/bg-curve3-1903x98.png");
     margin-bottom: 20px;
 }
 
