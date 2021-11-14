@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./asset/css/all.min.css">
-    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/header-footer.css">
     <link rel="stylesheet" href="./asset/css/index.css">
-    <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/date-picker.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/input.css">
+    <link rel="stylesheet" href="./asset/css/home.css">
     <script src="./asset/js/jquery.min.js"></script>
     <script src="./asset/js/jquery-ui.min.js"></script>
     <script src="./asset/js/jquery.ui.datepicker-ja.min.js"></script>
@@ -52,138 +53,173 @@
         <header>
             <div class="header">
                 <div class="logo">
-                    <img src="./asset/images/logo-fanpage.jpg" style="width: 80px; height: 80px;" />
+                    <img src="./asset/images/logo-fanpage.jpg" />
                 </div>
                 <div class="item-menu-left" id="tabs">
-                    <div class="item-menu" id="search1">
-                        <div class="item">患者検索</div>
-                        <div class="line"></div>
-                    </div>
                     <div class="item-menu" id="history1">
-                        <div class="item checkfield-selected">カルテ</div>
+                        <div class="item checkfield-selected">Home</div>
                         <div class="line active"></div>
                     </div>
                     <div class="item-menu" id="history2">
-                        <div class="item">オーダ</div>
+                        <div class="item">Service</div>
                         <div class="line"></div>
                     </div>
                     <div class="item-menu" id="simple1">
-                        <div class="item">患者基本</div>
+                        <div class="item">News</div>
                         <div class="line"></div>
                     </div>
                     <div class="item-menu" id="simple2">
-                        <div class="item">看護情報</div>
+                        <div class="item">About Us</div>
                         <div class="line"></div>
                     </div>
                     <div class="item-menu" id="calendar1">
-                        <div class="item">経過表</div>
+                        <div class="item">Contact</div>
                         <div class="line"></div>
                     </div>
-                </div>
-                <div class="item-menu-right">
-                    <div class="info-user">
-                        <h4 class="title-user-info">
-                            <i class="fas fa-user"></i> 1842 (診療情報管理士)
-                        </h4>
-                        <button class="btn-logout">ログアウト</button>
-                    </div>
-                </div>
-            </div>
-            <div class="content-profile-info">
-                <div id="profile-info">
-                    <div class="profile-info-patient profile-info-patient-icon">
-                        <div class="frame">
-                            <img id="avatar" alt="" class="light-logo" src="./asset/images/patient/70F.png" width="80" height="80">
-                            <span id="infoPatient-sex">女性</span>
-                        </div>
-                    </div>
-                    <div class="profile-info-patient profile-info-patient-no">
-                        <fieldset id="profile-no">
-                            <legend>
-                                <div class="view-type-title">患者番号</div>
-                            </legend>
-                            <span class="profile-info-patient-label-input"><span class="info-profile-input-data">
-                  <input type="text" id="patient-no" value=""></span></span>
-                            <!-- <span class="patient-no-input-msg"> ※ 患者番号を入力してください。</span> -->
-                        </fieldset>
-                        <fieldset id="profile-name">
-                            <legend>
-                                <div class="view-type-title">氏名</div>
-                            </legend>
-                            <span class="info-profile-input-data patient-name"></span>
-                            <span class="info-profile-input-data patient-no-number-change"></span>
-                        </fieldset>
-                        <fieldset class="info-profile">
-                            <legend>
-                                <div class="view-type-title">血液型</div>
-                            </legend>
-                            <span class="info-profile-input-data">B型 Rh(+)</span>
-                        </fieldset>
-                        <fieldset class="info-profile">
-                            <legend>
-                                <div class="view-type-title">体重</div>
-                            </legend>
-                            <span class="info-profile-input-data">57.0kg</span>
-                        </fieldset>
-                        <fieldset class="info-profile">
-                            <legend>
-                                <div class="view-type-title">身長</div>
-                            </legend>
-                            <span class="info-profile-input-data">156.0cm</span>
-                        </fieldset>
-                        <fieldset id="profile-date">
-                            <legend>
-                                <div class="view-type-title">生年月日</div>
-                            </legend>
-                            <span class="info-profile-input-data">1931年07月21日 (90歳 0ヶ月)</span>
-                        </fieldset>
-                        <fieldset class="profile-date">
-                            <legend>
-                                <div class="view-type-title">診療期間</div>
-                            </legend>
-                            <span class="info-patient-physical-time">2015年10月01日</span> <span class="info-profile-towards"> ~ </span>
-                            <span class="info-patient-physical-time">2016年09月20日</span>
-                        </fieldset>
-                    </div>
-                    <div class="profile-info-patient profile-info-patient-represent">
-                        <span class="profile-info-patient-represent-item"><img alt=""
-                src="./asset/images/allergy/food_allergy_48.png"></span> <span class="profile-info-patient-represent-item"><img alt=""
-                src="./asset/images/allergy/food_allergy_nodata.png"></span> <span class="profile-info-patient-represent-item"><img alt=""
-                src="./asset/images/allergy/infection_48.png"></span>
-                    </div>
-                    <div class="profile-info-patient-represent-item profile-info-patient-zoom-icon">
-                        <div class="min-zoom-icon"></div>
-                        <div class="max-zoom-icon"></div>
-
-                    </div>
-                </div>
-                <div class="profile-info-patient-zoom-out">
-                    <div class="input-patient-no">
-                        <div class="search">
-                            <div class="input-bar">
-                                <input type="search" name="search" id="search-text" autocomplete="off" />
-
-                                <button id="search" title="検 索">
-                  <i class="fa fa-search"></i> <span class="a11y-hidden">検
-                    索</span>
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="enlarge-zoom"></div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <div class="control-form-search">
-                <div class="control-form-search-label">検索語メニュー</div>
-                <div class="control-form-search-icon"></div>
-            </div>
-            <div id="search1" class="box-search">
-                開発中
-            </div>
             <div id="history1" class="box-search active">
-                history1
+                <div class="introduce">
+                    <div class="inner">
+                        <div class="text">
+                            <h1>Content Creation Services</h1>
+                            <p></p>
+                            <p>Lomi mang đến sự khác biệt trong từng nội dung bài viết (Web Content). Thương hiệu của bạn sẽ đi vào tâm trí người dùng như dòng nước mưa thấm vào lòng đất, nội dung SEO sẽ được Google Search ưu ái như một chân mệnh thiên tử.
+                                Sự thành công vững bền trong chiến dịch Marketing sẽ đến chậm nhưng chắc chắn!</p>
+                            <p>Chúng tôi biết các công cụ tìm kiếm và chúng tôi biết nguời đọc của bạn. Hãy tạo ra một cái gì đó lớn lao.</p>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <div class="banner-content banner-item">
+                            <span class="icon"><i class="fas fa-align-justify"></i></span>
+                            <h3 class="banner-title">Nội dung website</h3>
+                            <p class="penci-ibox-content">
+                                Lomi và quý khách hàng sẽ cùng bàn bạc đi đến thống nhất về kế hoạch triển khai cho từng nội dung SEO. Mỗi nội dung đều có quy chuẩn riêng nhằm tối ưu hóa công cụ tìm kiếm (Search Engine Optimization) và đáp ứng tối đa nhu cầu tìm kiếm của người dùng
+                                (Search Intent). Bên cạnh đó là sự tiết kiệm ngân sách cho khách hàng!
+                            </p>
+                        </div>
+                        <div class="banner-keyword banner-item">
+                            <span class="icon"><i class="fas fa-search-plus"></i></span>
+                            <h3 class="banner-title">Nghiên cứu từ khóa</h3>
+                            <p class="penci-ibox-content">
+                                Lomi sẽ tiến hành nghiên cứu và chọn lọc từ khóa theo kế hoạch Content SEO đã xây dựng (Keyword Filter và Keyword Research). Từ đó triển khai xây dựng nội dung SEO cho Website một cách nhanh chóng và hiệu quả nhất. Tất cả từ khóa đều được nghiên cứu theo
+                                Search Intent và các kỹ thuật dự đoán từ khóa bí mật khác!
+                            </p>
+                        </div>
+                        <div class="banner-optimal banner-item">
+                            <span class="icon"><i class="fas fa-compress-arrows-alt"></i></span>
+                            <h3 class="banner-title">Tối ưu nội dung</h3>
+                            <p class="penci-ibox-content">
+                                Sau khi hoàn thành bài viết chuẩn SEO cho Website theo yêu cầu. Chúng tôi sẽ hỗ trợ quý khách đăng tải nội dung SEO lên trang web có tính phí hoặc hướng dẫn miễn phí cho quý anh/chị tự đăng tải. Ngoài ra chúng tôi còn có dịch vụ chỉnh sửa và tối ưu hóa
+                                các bài viết sẵn có trên website. Nội dung được tối ưu theo Search Console và Google Analytics sẽ trở nên hoàn hảo!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-image">
+                </div>
+                <div class="content-service">
+                    <div class="content-seo service">
+                        <img src="./asset/images/content-seo.jpg" />
+                        <div class="content">
+                            <h3>Dịch vụ viết bài SEO</h3>
+                            <p>Lomi cung cấp dịch vụ viết bài chuẩn SEO đáp ứng nhu cầu tìm kiếm của người dùng và tối ưu hóa công cụ tìm kiếm (Search Engine) như Google. Từ đó cải thiện thứ hạng từ khóa và tăng chuyển đổi cho website.</p>
+                        </div>
+                    </div>
+                    <div class="content-facebook service">
+                        <div class="content">
+                            <h3>Dịch vụ chăm sóc Fanpage</h3>
+                            <p>Chăm sóc fanpage tốt không chỉ mang đến thông tin mà còn định hướng cho người xem phong cách của fanpage mà còn phải làm cho người xem tin yêu và tin tưởng vào các nội dung đưa ra. Từ đó có thể giới thiệu đến nhiều người hơn.</p>
+                        </div>
+                        <img src="./asset/images/content-fanpgae.jpg" />
+                    </div>
+                    <div class="content-website service">
+                        <img src="./asset/images/content-website.jpg" />
+                        <div class="content">
+                            <h3>Dịch vụ quản trị website</h3>
+                            <p>Cung cấp cho các doanh nghiệp SMEs vừa và nhỏ, Start-up, chủ website một giải pháp xây dựng nội dung website trọn gói. Lomi sẽ làm từ A-Z cho bạn để nội dung website ngày càng tăng trưởng.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-landingpage service">
+                        <div class="content">
+                            <h3>Dịch vụ xây dựng Landing Page</h3>
+                            <p>Landing Page giúp doanh nghiệp hoặc cá nhân người sử dụng nhắm đến mục đích duy nhất là Tối ưu hóa tỉ lệ chuyển đổi nhằm đạt được mục tiêu tiếp thị từ doanh nghiệp hay cá nhân người sử dụng đó</p>
+                        </div>
+                        <img src="./asset/images/content-landing.png" />
+                    </div>
+                </div>
+                <div class="drop-image-content">
+                </div>
+                <div class="introduce-price">
+                    <span class=subtitle>BẢNG GIÁ DỊCH VỤ VIẾT BÀI SEO MỚI NHẤT</span>
+                    <h2>Giá Dịch Vụ Content SEO Tại Lomi</h2>
+                    <div class="info-price">
+                        <div class="info-price-fanpage item">
+                            <div class="penci-pricing-header">
+                                <div class="penci-pricing__title">Content SEO</div>
+                                <div class="penci-pricing__subtitle">Website cá nhân/doanh nghiệp</div>
+                            </div>
+                            <div class="penci-price-unit">
+                                <span class="penci-pricing__price">100.000</span>
+                                <span class="penci-pricing__unit">Bài viết 1000 từ</span>
+                            </div>
+                            <div class="penci-pricing__featured">
+                                <p>Bài viết bao gồm chữ và hình</p>
+                                <p>Tối ưu cấu trúc SEO từ A-Z</p>
+                                <p>Đầy đủ Meta, Title, Sapo, Heading, CTR</p>
+                                <p>Cam kết nội dung mới Unique &gt;90%</p>
+                                <p>Văn phong đơn giản, dễ hiểu</p>
+                            </div>
+                            <div class="penci-pricing-footer">
+                                <button><a class="penci-pricing__btn button" href="" title="" target=" _blank">Xem ngay</a></button>
+                            </div>
+                        </div>
+                        <div class="info-price-seo item">
+                            <div class="penci-pricing-header">
+                                <div class="penci-pricing__title">Chăm sóc Fanpage</div>
+                                <div class="penci-pricing__subtitle">Website cá nhân/doanh nghiệp</div>
+                            </div>
+                            <div class="penci-price-unit">
+                                <span class="penci-pricing__price">100.000</span>
+                                <span class="penci-pricing__unit">Bài viết 1000 từ</span>
+                            </div>
+                            <div class="penci-pricing__featured">
+                                <p>Bài viết bao gồm chữ và hình</p>
+                                <p>Tối ưu cấu trúc SEO từ A-Z</p>
+                                <p>Đầy đủ Meta, Title, Sapo, Heading, CTR</p>
+                                <p>Cam kết nội dung mới Unique &gt;90%</p>
+                                <p>Văn phong đơn giản, dễ hiểu</p>
+                            </div>
+                            <div class="penci-pricing-footer">
+                                <button><a class="penci-pricing__btn button" href="" title="" target=" _blank">Xem ngay</a></button>
+                            </div>
+                        </div>
+                        <div class="info-price-website item">
+                            <div class="penci-pricing-header">
+                                <div class="penci-pricing__title">Content website</div>
+                                <div class="penci-pricing__subtitle">Website cá nhân/doanh nghiệp</div>
+                            </div>
+                            <div class="penci-price-unit">
+                                <span class="penci-pricing__price">100.000</span>
+                                <span class="penci-pricing__unit">Bài viết 1000 từ</span>
+                            </div>
+                            <div class="penci-pricing__featured">
+                                <p>Bài viết bao gồm chữ và hình</p>
+                                <p>Tối ưu cấu trúc SEO từ A-Z</p>
+                                <p>Đầy đủ Meta, Title, Sapo, Heading, CTR</p>
+                                <p>Cam kết nội dung mới Unique &gt;90%</p>
+                                <p>Văn phong đơn giản, dễ hiểu</p>
+                            </div>
+                            <div class="penci-pricing-footer">
+                                <button><a class="penci-pricing__btn button" href="" title="" target=" _blank">Xem ngay</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="history2" class="box-search">
                 history2
