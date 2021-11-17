@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="./asset/css/input.css">
     <link rel="stylesheet" href="./asset/css/home.css">
     <link rel="stylesheet" href="./asset/css/contact.css">
+    <link rel="stylesheet" href="./asset/css/service.css">
     <script src="./asset/js/jquery.min.js"></script>
     <script src="./asset/js/jquery-ui.min.js"></script>
     <script src="./asset/js/jquery.ui.datepicker-ja.min.js"></script>
+    <!-- first include tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+
+    <!-- then include jquery wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
     <script>
         $(function() {
             $(".stFromDate , .stToDate").datepicker({
@@ -66,15 +72,15 @@
                         <div class="line"></div>
                     </div>
                     <div class="item-menu" id="simple1">
-                        <div class="item">News</div>
+                        <div class="item">Bảng giá</div>
                         <div class="line"></div>
                     </div>
                     <div class="item-menu" id="simple2">
-                        <div class="item">About Us</div>
+                        <div class="item">Blog</div>
                         <div class="line"></div>
                     </div>
                     <div class="item-menu" id="calendar1">
-                        <div class="item">Contact</div>
+                        <div class="item">Liên hệ</div>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -83,6 +89,7 @@
         <main class="main">
             <div id="history1" class="box-search active">
                 <div class="introduce">
+                    <div id="tsparticles"></div>
                     <div class="inner">
                         <div class="text">
                             <h1>Content Creation Services</h1>
@@ -119,9 +126,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="drop-image">
-                </div>
-                <div class="content-service">
+                <div class="content-service introduce-price">
+                    <span class=subtitle>DỊCH VỤ</span>
+                    <h2>Các Dịch Vụ Tại LoMi</h2>
                     <div class="content-seo service">
                         <img src="./asset/images/content-seo.jpg" />
                         <div class="content">
@@ -132,28 +139,11 @@
                     <div class="content-facebook service">
                         <div class="content">
                             <h3>Dịch vụ chăm sóc Fanpage</h3>
-                            <p>Chăm sóc fanpage tốt không chỉ mang đến thông tin mà còn định hướng cho người xem phong cách của fanpage mà còn phải làm cho người xem tin yêu và tin tưởng vào các nội dung đưa ra. Từ đó có thể giới thiệu đến nhiều người hơn.</p>
+                            <p>Chăm sóc fanpage tốt không chỉ mang đến thông tin mà còn định hướng cho người xem phong cách của fanpage mà còn phải làm cho người xem tin yêu và tin tưởng vào các nội dung đưa ra. Từ đó có thể giới thiệu đến nhiều người hơn.
+                            </p>
                         </div>
                         <img src="./asset/images/content-fanpgae.jpg" />
                     </div>
-                    <div class="content-website service">
-                        <img src="./asset/images/content-website.jpg" />
-                        <div class="content">
-                            <h3>Dịch vụ quản trị website</h3>
-                            <p>Cung cấp cho các doanh nghiệp SMEs vừa và nhỏ, Start-up, chủ website một giải pháp xây dựng nội dung website trọn gói. Lomi sẽ làm từ A-Z cho bạn để nội dung website ngày càng tăng trưởng.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="content-landingpage service">
-                        <div class="content">
-                            <h3>Dịch vụ xây dựng Landing Page</h3>
-                            <p>Landing Page giúp doanh nghiệp hoặc cá nhân người sử dụng nhắm đến mục đích duy nhất là Tối ưu hóa tỉ lệ chuyển đổi nhằm đạt được mục tiêu tiếp thị từ doanh nghiệp hay cá nhân người sử dụng đó</p>
-                        </div>
-                        <img src="./asset/images/content-landing.png" />
-                    </div>
-                </div>
-                <div class="drop-image-content">
                 </div>
                 <div class="introduce-price">
                     <span class=subtitle>BẢNG GIÁ DỊCH VỤ VIẾT BÀI SEO MỚI NHẤT</span>
@@ -221,10 +211,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="drop-image-content">
-                </div>
                 <div class="introduce-price blog">
-                    <span class=subtitle>Blog Lomi</span>
+                    <span class=subtitle>BLOG LOMI</span>
                     <h2>Góc chia sẻ kiến thức Content SEO</h2>
                     <div class="info-price">
                         <div class="info-price-fanpage item">
@@ -268,7 +256,6 @@
 
             </div>
             <div id="history2" class="box-search">
-                history2
             </div>
             <div id="simple1" class="box-search">
                 history3
@@ -285,32 +272,47 @@
                     <div class="custom_main_container">
                         <div class="main-container-form">
                             <div class="form-title">
-                                <h2>Contact Us</h2>
+                                <h2>Liên hệ LoMi</h2>
                             </div>
                             <div class="form-decription">
-                                <span class="decription 1">You may refer to our FAQ section for some quick answers and continue shopping at Venus Beauty E-Shop!
-                                         Locate our stores or learn more about retail outlet operating hours here.</span>
-                                <span class="decription 2">If there are any further enquiries you may fill up the form below and we will get back to you as soon as possible.</span>
+                                <span class="decription 1">
+                                    Cảm ơn anh/chị đã tin tưởng LoMi! Anh/chị vui lòng liên hệ theo một trong các thông tin bí mật sau đây:
+                                    <br>
+                                    &nbsp;- Fanpage: <a style="max-width: 250px;" class="_1drp _5lv6" title="LoMi Boutique" href="https://www.facebook.com/lomicontentchuanSEO.vn/" target="_blank">LoMi Boutique</a>
+                                    <br>
+                                    &nbsp;- Hotline: 0983 146 816
+                                    <br>
+                                    &nbsp;- Email: kieumi197@gmail.com
+                                    <br>
+                                    &nbsp;- Địa chỉ: 02 Ngô Thì Hương - P.Nại Hiên Đông - Q.Sơn Trà - TP.Đà Nẵng</span>
+                                <span class="decription 2">
+                                    Sau khi cung cấp yêu cầu và chi tiết bài viết, anh/chị sẽ nhận được báo giá trong thời gian sớm nhất. Và những điều sau đây luôn được cam kết trong mọi dự án:
+                                    <br>
+                                    &nbsp;* Luôn đúng deadline
+                                    <br>
+                                    &nbsp;* Chất lượng là ưu tiên hàng đầu
+                                    <br>
+                                    &nbsp;* Copy là chuyện không tưởng</span>
                             </div>
                             <div class="form-content">
                                 <div class="form-content-input">
-                                    <span class="form-content-input-label">Name</span>
+                                    <span class="form-content-input-label">TÊN CỦA BẠN (BẮT BUỘC)</span>
                                     <input type="text" class="input-txt">
                                 </div>
                                 <div class="form-content-input">
-                                    <span class="form-content-input-label">Email address</span>
+                                    <span class="form-content-input-label">ĐỊA CHỈ EMAIL (BẮT BUỘC)</span>
                                     <input type="text" class="input-txt">
                                 </div>
                                 <div class="form-content-input">
-                                    <span class="form-content-input-label">Contact No</span>
+                                    <span class="form-content-input-label">TIÊU ĐỀ THƯ:</span>
                                     <input type="text" class="input-txt">
                                 </div>
                                 <div class="form-content-input">
-                                    <span class="form-content-input-label">Your Message</span>
+                                    <span class="form-content-input-label">NỘI DUNG CẦN TƯ VẤN</span>
                                     <input type="text" class="input-txt">
                                 </div>
                                 <div class="form-content-submit">
-                                    <button type="submit" class="btn-submit">Submit Message</button>
+                                    <button type="submit" class="btn-submit">GỬI ĐI</button>
                                 </div>
 
                             </div>
@@ -414,5 +416,139 @@
         let n = $(".menu-search-title .item").index(this);
         $(".menu-search-condition .item:eq(" + n + ")").addClass("active");
         $(".menu-search-selected .value:eq(" + n + ")").addClass("active");
+    });
+
+    tsParticles.load("tsparticles", {
+        fpsLimit: 60,
+        particles: {
+            number: {
+                value: 160,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+            color: {
+                value: "#ff0000",
+                animation: {
+                    enable: true,
+                    speed: 20,
+                    sync: true
+                }
+            },
+            shape: {
+                type: "circle",
+                stroke: {
+                    width: 0
+                },
+                polygon: {
+                    nb_sides: 5
+                },
+                image: {
+                    src: "",
+                    width: 100,
+                    height: 100
+                }
+            },
+            opacity: {
+                value: 0.5,
+                random: false,
+                anim: {
+                    enable: false,
+                    speed: 3,
+                    opacity_min: 0.1,
+                    sync: false
+                }
+            },
+            size: {
+                value: 3,
+                random: true,
+                anim: {
+                    enable: false,
+                    speed: 20,
+                    size_min: 0.1,
+                    sync: false
+                }
+            },
+            line_linked: {
+                enable: true,
+                distance: 100,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200
+                }
+            },
+            life: {
+                duration: {
+                    sync: false,
+                    value: 3
+                },
+                count: 0,
+                delay: {
+                    random: {
+                        enable: true,
+                        minimumValue: 0.5
+                    },
+                    value: 1
+                }
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "repulse"
+                },
+                onclick: {
+                    enable: true,
+                    mode: "push"
+                },
+                resize: true
+            },
+            modes: {
+                grab: {
+                    distance: 400,
+                    line_linked: {
+                        opacity: 1
+                    }
+                },
+                bubble: {
+                    distance: 400,
+                    size: 40,
+                    duration: 2,
+                    opacity: 0.8
+                },
+                repulse: {
+                    distance: 200
+                },
+                push: {
+                    particles_nb: 4
+                },
+                remove: {
+                    particles_nb: 2
+                }
+            }
+        },
+        retina_detect: true,
+        background: {
+            color: "#000000",
+            image: "",
+            position: "50% 50%",
+            repeat: "no-repeat",
+            size: "cover"
+        }
     });
 </script>

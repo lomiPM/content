@@ -26,11 +26,11 @@
 }
 
 .main-wapper-contact .custom_main_container {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 885px;
+    height: 1100px;
     background: #ffffff;
     margin-top: 55px;
     border-radius: 10px;
@@ -47,7 +47,6 @@
 
 .main-wapper-contact .custom_main_container .main-container-careers {
     width: 50%;
-    padding-left: 20px;
     padding-right: 40px;
 }
 
@@ -55,6 +54,7 @@
     font-size: 26px;
     text-align: left;
     color: #000000;
+    font-family: 'Font Awesome 5 Free';
 }
 
 .main-wapper-contact .custom_main_container .main-container-form .form-decription {
@@ -67,7 +67,7 @@
 .main-wapper-contact .custom_main_container .main-container-form .form-decription .decription {
     margin-top: 0rem;
     margin-bottom: 1rem;
-    font-family: -webkit-pictograph;
+    font-family: 'Font Awesome 5 Free';
     line-height: 26px;
     color: #7a7a7a;
     text-align: left;
@@ -75,6 +75,7 @@
 
 .main-wapper-contact .custom_main_container .main-container-form .form-content {
     width: 100%;
+    margin-top: 160px;
 }
 
 .main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input {
@@ -91,7 +92,7 @@
 }
 
 .main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input input {
-    width: 100%;
+    width: 98%;
     height: 50px;
     border-radius: 5px;
     border: 1px solid #d2d7e1;
@@ -104,7 +105,7 @@
 .main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-submit {
     width: 100%;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 25px;
     background: #2b82ca;
     display: flex;
     align-items: center;
@@ -129,7 +130,7 @@
     background-size: cover;
     width: 77%;
     float: right;
-    height: 57%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
