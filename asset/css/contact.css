@@ -1,0 +1,177 @@
+.main-wapper-contact {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.main-wapper-contents-contact {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.main-wapper-contents-contact .banner-img {
+    height: 194px;
+    background-image: url("/asset/images/detail-banner.jpg");
+    color: #FFF;
+    padding-top: 266px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: right;
+}
+
+.main-wapper-contact .custom_main_container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 885px;
+    background: #ffffff;
+    margin-top: 55px;
+    border-radius: 10px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-wapper-contact .custom_main_container .main-container-form {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 10px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-title {
+    font-size: 26px;
+    text-align: left;
+    color: #000000;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-decription {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-decription .decription {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-family: -webkit-pictograph;
+    line-height: 26px;
+    color: #7a7a7a;
+    text-align: left;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-content {
+    width: 100%;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input span {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 900;
+    font-family: emoji;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #d2d7e1;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background: #2b82ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-submit .btn-submit {
+    background: #2b82ca;
+    border: 1px solid #2b82ca;
+    border-color: #2b82ca;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image {
+    background-image: url("/asset/images/contact_us.jpg");
+    padding: 45px 45px;
+    color: #FFF;
+    padding-top: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77%;
+    float: right;
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image .main-container-careers-email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-size: 26px;
+    align-items: flex-start;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image .main-container-careers-offical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image .main-container-careers-email .careers-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image .main-container-careers-offical .careers-title {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image .main-container-careers-offical .careers-content {
+    font-size: 16px;
+    align-items: flex-start;
+    text-align: left;
+    font-family: math;
+    margin-bottom: 10px;
+}
+
+.main-wapper-contact .custom_main_container .main-container-careers .contact-us-image .main-container-careers-offical .careers-content-mail {
+    font-size: 16px;
+    align-items: flex-start;
+    text-align: left;
+    font-family: math;
+}

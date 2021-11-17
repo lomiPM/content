@@ -1,7 +1,7 @@
 #history1 .introduce {
-    width: 1920px;
+    width: 100%;
     height: 675px;
-    background-image: url("https://github.com/lomiPM/content/blob/master/asset/images/Content-images-background.png");
+    background-image: url("/asset/images/Content-images-background.png");
 }
 
 #history1 .inner {
@@ -36,7 +36,7 @@
     justify-content: space-around;
     position: absolute;
     width: 100%;
-    top: 620px;
+    top: 580px;
     background: transparent;
 }
 
@@ -87,16 +87,15 @@
 #history1 .drop-image {
     width: 1920px;
     height: 225px;
-    background-image: url("https://github.com/lomiPM/content/blob/master/asset/images/bg-curve3-1903x98.png");
+    background-image: url("/asset/images/bg-curve3-1903x98.png");
     margin-top: 210px;
     margin-bottom: 20px;
 }
 
 #history1 .drop-image-content {
     width: 1920px;
-    height: 225px;
-    background-image: url("https://github.com/lomiPM/content/blob/master/asset/images/bg-curve3-1903x98.png");
-    margin-bottom: 20px;
+    height: 200px;
+    background-image: url("/asset/images/bg-curve3-1903x98.png");
 }
 
 #history1 .content-service {
@@ -182,7 +181,7 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Font Awesome 5 Free';
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 #history1 .introduce-price .subtitle {
@@ -291,4 +290,82 @@
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+}
+
+.hover .img {
+    overflow: hidden;
+    transform: rotate(0.0001deg);
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover img {
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover:hover .img {
+    transform: scale(0.95);
+}
+
+.hover:hover img {
+    transform: scale(1.15);
+}
+
+#history1 .blog .info-price .item .penci-pricing__featured {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#history1 .blog .info-price .item .penci-pricing__featured p {
+    margin-bottom: 50px;
+    text-align: left;
+    color: #363d4c;
+    font-family: system-ui;
+    font-size: medium;
+}
+
+#history1 .blog .info-price .item .img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#history1 .blog .info-price .item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#history1 .blog .info-price .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f0f09c;
+    height: 500px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner-item {
+    padding: 20px 20px;
+    text-align: center;
+    min-height: 350px;
+}
+
+.banner-item {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 10px 0px;
+}
+
+.banner-item:hover {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#history1 .blog {
+    margin-bottom: 100px !important;
 }

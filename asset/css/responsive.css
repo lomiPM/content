@@ -1,4 +1,4 @@
-@media screen and (max-width: 1630px) {
+@media screen and (max-width: 1699px) {
     .view-date-select .view-type-body {
         display: flex;
         justify-content: space-between;
@@ -15,19 +15,66 @@
         top: 555px !important;
     }
     #history1 .drop-image {
-        margin-top: 260px !important;
+        margin-top: 255px !important;
+        height: 200px !important;
+        width: 100% !important;
+    }
+    #history1 .introduce-price .info-price .item p {
+        font-size: inherit !important;
+    }
+    .container .header .item-menu-left {
+        width: 80% !important;
+        margin-right: 100px !important;
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1450px) {
+    #history1 .content-service .service {
+        width: 980px !important;
+    }
     #history1 .banner .banner-item {
-        height: 520px !important;
-        top: 600px !important;
+        height: 450px !important;
+        width: 1000px !important;
+    }
+    #history1 .drop-image {
+        margin-top: 240px !important;
+        height: 200px !important;
+    }
+    #history1 .introduce {
+        height: 850px !important;
+    }
+    #history1 .banner {
+        top: 700px !important;
+    }
+    #history1 .introduce-price .info-price {
+        width: 1040px !important;
+    }
+    #history1 .content-service .service .content h3 {
+        font-size: 20px !important;
+    }
+    .container .header .item-menu-left {
+        width: 70% !important;
+        margin-right: 10% !important;
     }
 }
 
-@media screen and (max-width: 1358px) {
-    #history1 .banner .banner-item {
-        height: 450px;
+@media screen and (max-width: 1349px) {
+    #history1 .banner .banner-item .banner-title {
+        font-size: 26px !important;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    #history1 .banner {
+        width: 1215px !important;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #history1 .introduce {
+        width: 1041px !important;
+    }
+    #history1 .inner .text {
+        height: 100px !important;
     }
 }
