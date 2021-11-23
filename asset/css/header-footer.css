@@ -26,14 +26,17 @@ header {
 }
 
 .container .header {
-    background-image: linear-gradient(180deg, #2b82ac 0%, #f5fdfe 100%);
+    background-image: linear-gradient(180deg, #0d418f 0%, #f5fdfe 100%);
     display: flex;
     top: 0;
     height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .container .header .logo {
-    width: 300px;
+    width: 10%;
     display: flex;
     justify-content: center;
     padding-top: 2px;
@@ -48,14 +51,53 @@ header {
 
 .container .header .item-menu-left {
     display: flex;
-    margin-right: 5%;
     align-items: center;
     padding-top: 30px;
     justify-content: center;
+    user-select: none;
+    width: 60%;
+}
+
+.checkfield-selected {
+    border: solid 1px #0d418f;
+}
+
+.checkfield-selected:before,
+.checkfield-selected:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.checkfield-selected:before {
+    border-top-left-radius: 10px;
+    border-width: 15px;
+    border-left-color: #0d418f;
+    border-top-color: #0d418f;
+}
+
+.triangle.active::before,
+.triangle.active::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    right: -3px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.triangle.active::after {
+    border-width: 9px;
+    border-right-color: #0d418f;
+    border-top-color: #0d418f;
+    transform: rotate(225deg);
 }
 
 .container .header .item-menu-left .item-menu {
-    width: 235px;
+    width: 18%;
     margin: 0px 10px 10px 0px;
 }
 
@@ -80,13 +122,13 @@ header {
 }
 
 .container .header .item-menu-left .line.active {
-    background-color: #2b82ac;
-    box-shadow: 2px 2px 10px 2px #2b82ac;
+    background-color: #0d418f;
+    box-shadow: 2px 2px 10px 2px #0d418f;
 }
 
 .container .header .item-menu-left .item-menu:hover .line {
-    background-color: #2b82ac;
-    box-shadow: 1px 1px 5px 1px #2b82ac;
+    background-color: #0d418f;
+    box-shadow: 1px 1px 5px 1px #0d418f;
 }
 
 .container .header .item-menu-right {
@@ -96,70 +138,6 @@ header {
     justify-content: flex-start;
     align-items: flex-end;
     margin-right: 10px;
-}
-
-.container .header .item-menu-right .info-user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.container .header .item-menu-right .btn-logout {
-    height: 30px;
-    border-radius: 10px;
-    border: 0px solid;
-    padding-right: 20px;
-    padding-left: 20px;
-    cursor: pointer;
-}
-
-.container .header .item-menu-right .title-user-info {
-    color: white;
-    margin-right: 10px;
-}
-
-.container .header .item-menu-right .dropdown {
-    margin-top: 16px;
-    position: relative;
-    display: inline-block;
-    margin-right: 72px;
-}
-
-.container .header .item-menu-right button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.container .header .item-menu-right .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-}
-
-.container .header .item-menu-right .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.container .header .item-menu-right .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    border-radius: 10px;
-}
-
-.container .header .item-menu-right .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.btn-dropmenu {
-    border: 0px solid;
-    padding: 0.8em 3.7em;
-    border-radius: 10px;
-    transition: all 0.2s;
 }
 
 .main .box-search {
@@ -179,8 +157,8 @@ header {
 /* footer */
 
 .footer {
-    background-color: rgb(249, 249, 249);
-    height: 510px;
+    background-color: rgb(191 219 251);
+    height: 380px;
     bottom: 0px;
     width: 100%;
     display: flex;
@@ -196,36 +174,38 @@ header {
 .footer .footer-main {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 1130px;
     justify-content: center;
-    padding-left: 5%;
 }
 
 .footer .footer-main .footer-main-content {
-    width: 22%;
+    width: 34%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 283px;
+    height: 170px;
     margin-bottom: 150px;
 }
 
+.footer .footer-main .footer-service {
+    width: 30%;
+}
+
 .footer .footer-main .footer-main-content .title {
-    height: 100%;
+    height: 9%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .footer .footer-main .footer-main-content .title h5 {
-    color: rgb(85, 85, 85);
+    color: rgb(37, 90, 169);
     margin-top: 0px;
-    margin-bottom: 20px;
     padding-bottom: 0px;
     letter-spacing: 0.048em;
     font-family: "PT Sans Caption", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 150%;
 }
 
@@ -241,10 +221,11 @@ header {
     display: flex;
     flex-direction: column;
     font-size: medium;
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: left;
     line-height: 28px;
     color: #ab3636;
+    align-items: center;
 }
 
 .footer .footer-main .footer-main-content .content .menu-footer-container a {
@@ -268,7 +249,7 @@ header {
     text-decoration-line: none;
     color: #ab3636;
     font-family: system-ui;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer .footer-main .footer-main-content .content .menu-footer-container .menu-social-icon .icon a {
@@ -278,7 +259,7 @@ header {
 }
 
 .footer .footer-main .footer-main-content .footer-social-media {
-    height: 16%;
+    height: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -294,8 +275,8 @@ header {
 }
 
 .footer .copy-right-by {
-    background: rgb(224, 224, 224);
-    height: 100%;
+    background: rgb(32 81 152);
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,9 +330,14 @@ header {
 }
 
 .footer-main-content .title .title-service {
-    width: 166px;
+    width: 151px;
+    text-align: right;
+}
+
+.footer-main-content .footer-customer-support h5 {
+    width: 194px;
 }
 
 .footer-main-content .title .title-social {
-    width: 435px;
+    width: 422px;
 }

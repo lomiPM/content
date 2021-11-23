@@ -6,53 +6,18 @@
     <link rel="stylesheet" href="./asset/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/header-footer.css">
     <link rel="stylesheet" href="./asset/css/index.css">
-    <link rel="stylesheet" href="./asset/css/date-picker.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
-    <link rel="stylesheet" href="./asset/css/input.css">
     <link rel="stylesheet" href="./asset/css/home.css">
     <link rel="stylesheet" href="./asset/css/contact.css">
-    <link rel="stylesheet" href="./asset/css/service.css">
+    <link rel="stylesheet" href="./asset/css/seo.css">
+    <link rel="stylesheet" href="./asset/css/price.css">
+    <link rel="stylesheet" href="./asset/css/modal.css">
     <script src="./asset/js/jquery.min.js"></script>
     <script src="./asset/js/jquery-ui.min.js"></script>
     <script src="./asset/js/jquery.ui.datepicker-ja.min.js"></script>
     <!-- first include tsParticles -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-
     <!-- then include jquery wrapper -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
-    <script>
-        $(function() {
-            $(".stFromDate , .stToDate").datepicker({
-                yearRange: "1990:2040",
-                changeMonth: true,
-                changeYear: true,
-                duration: 300,
-                dateFormat: "yy年mm月dd日",
-                monthNames: [
-                    "1月",
-                    "2月",
-                    "3月",
-                    "4月",
-                    "5月",
-                    "6月",
-                    "7月",
-                    "8月",
-                    "9月",
-                    "10月",
-                    "11月",
-                    "12月",
-                ],
-                showButtonPanel: true
-            });
-            $.datepicker._gotoToday = function(id) {
-                var target = $(id);
-                var inst = this._getInst(target[0]);
-                var date = new Date();
-                this._setDate(inst, date);
-                this._hideDatepicker();
-            };
-        });
-    </script>
 </head>
 
 <body>
@@ -63,23 +28,23 @@
                     <img src="./asset/images/logo.png" />
                 </div>
                 <div class="item-menu-left" id="tabs">
-                    <div class="item-menu" id="history1">
+                    <div class="item-menu" id="home">
                         <div class="item checkfield-selected">Trang chủ</div>
                         <div class="line active"></div>
                     </div>
-                    <div class="item-menu" id="history2">
-                        <div class="item">Dịch vụ</div>
+                    <div class="item-menu" id="seo">
+                        <div class="item">SEO</div>
                         <div class="line"></div>
                     </div>
-                    <div class="item-menu" id="simple1">
+                    <div class="item-menu" id="price">
                         <div class="item">Bảng giá</div>
                         <div class="line"></div>
                     </div>
-                    <div class="item-menu" id="simple2">
+                    <!-- <div class="item-menu" id="blog">
                         <div class="item">Blog</div>
                         <div class="line"></div>
-                    </div>
-                    <div class="item-menu" id="calendar1">
+                    </div> -->
+                    <div class="item-menu" id="contact">
                         <div class="item">Liên hệ</div>
                         <div class="line"></div>
                     </div>
@@ -87,7 +52,7 @@
             </div>
         </header>
         <main class="main">
-            <div id="history1" class="box-search active">
+            <div id="home" class="box-search active">
                 <div class="introduce">
                     <div id="tsparticles"></div>
                     <div class="inner">
@@ -96,7 +61,6 @@
                             <p></p>
                             <p>Lomi mang đến sự khác biệt trong từng nội dung bài viết (Web Content). Thương hiệu của bạn sẽ đi vào tâm trí người dùng như dòng nước mưa thấm vào lòng đất, nội dung SEO sẽ được Google Search ưu ái như một chân mệnh thiên tử.
                                 Sự thành công vững bền trong chiến dịch Marketing sẽ đến chậm nhưng chắc chắn!</p>
-                            <p>Chúng tôi biết các công cụ tìm kiếm và chúng tôi biết nguời đọc của bạn. Hãy tạo ra một cái gì đó lớn lao.</p>
                         </div>
                     </div>
                     <div class="banner">
@@ -128,17 +92,17 @@
                 </div>
                 <div class="content-service introduce-price">
                     <span class=subtitle>DỊCH VỤ</span>
-                    <h2>Các Dịch Vụ Tại LoMi</h2>
+                    <h2>Các Dịch Vụ Tại Lomi</h2>
                     <div class="content-seo service">
                         <img src="./asset/images/content-seo.jpg" />
                         <div class="content">
-                            <h3>Dịch vụ viết bài SEO</h3>
+                            <h3 class="link-price">Dịch vụ viết bài SEO</h3>
                             <p>Lomi cung cấp dịch vụ viết bài chuẩn SEO đáp ứng nhu cầu tìm kiếm của người dùng và tối ưu hóa công cụ tìm kiếm (Search Engine) như Google. Từ đó cải thiện thứ hạng từ khóa và tăng chuyển đổi cho website.</p>
                         </div>
                     </div>
                     <div class="content-facebook service">
                         <div class="content">
-                            <h3>Dịch vụ chăm sóc Fanpage</h3>
+                            <h3 class="link-price">Dịch vụ chăm sóc Fanpage</h3>
                             <p>Chăm sóc fanpage tốt không chỉ mang đến thông tin mà còn định hướng cho người xem phong cách của fanpage mà còn phải làm cho người xem tin yêu và tin tưởng vào các nội dung đưa ra. Từ đó có thể giới thiệu đến nhiều người hơn.
                             </p>
                         </div>
@@ -149,7 +113,7 @@
                     <span class=subtitle>BẢNG GIÁ DỊCH VỤ VIẾT BÀI SEO MỚI NHẤT</span>
                     <h2>Giá Dịch Vụ Content SEO Tại Lomi</h2>
                     <div class="info-price">
-                        <div class="info-price-fanpage item">
+                        <div class="info-price-fanpage item element">
                             <div class="penci-pricing-header">
                                 <div class="penci-pricing__title">Content SEO</div>
                                 <div class="penci-pricing__subtitle">Website cá nhân/doanh nghiệp</div>
@@ -166,10 +130,10 @@
                                 <p>Văn phong đơn giản, dễ hiểu</p>
                             </div>
                             <div class="penci-pricing-footer">
-                                <button><a class="penci-pricing__btn button" href="" title="" target=" _blank">Xem ngay</a></button>
+                                <button><a class="penci-pricing__btn button link-price">Xem ngay</a></button>
                             </div>
                         </div>
-                        <div class="info-price-seo item">
+                        <div class="info-price-seo item element">
                             <div class="penci-pricing-header">
                                 <div class="penci-pricing__title">Chăm sóc Fanpage</div>
                                 <div class="penci-pricing__subtitle">Website cá nhân/doanh nghiệp</div>
@@ -186,10 +150,10 @@
                                 <p>Văn phong đơn giản, dễ hiểu</p>
                             </div>
                             <div class="penci-pricing-footer">
-                                <button><a class="penci-pricing__btn button" href="" title="" target=" _blank">Xem ngay</a></button>
+                                <button><a class="penci-pricing__btn button link-price">Xem ngay</a></button>
                             </div>
                         </div>
-                        <div class="info-price-website item">
+                        <div class="info-price-website item element">
                             <div class="penci-pricing-header">
                                 <div class="penci-pricing__title">Content website</div>
                                 <div class="penci-pricing__subtitle">Website cá nhân/doanh nghiệp</div>
@@ -206,13 +170,13 @@
                                 <p>Văn phong đơn giản, dễ hiểu</p>
                             </div>
                             <div class="penci-pricing-footer">
-                                <button><a class="penci-pricing__btn button" href="" title="" target=" _blank">Xem ngay</a></button>
+                                <button><a class="penci-pricing__btn button link-price">Xem ngay</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="introduce-price blog">
-                    <span class=subtitle>BLOG LOMI</span>
+                    <span class=subtitle>BLOG Lomi</span>
                     <h2>Góc chia sẻ kiến thức Content SEO</h2>
                     <div class="info-price">
                         <div class="info-price-fanpage item">
@@ -255,15 +219,548 @@
                 </div>
 
             </div>
-            <div id="history2" class="box-search">
+            <div id="seo" class="box-search">
+                <div class="introduce">
+                    <span class="sub-service">DỊCH VỤ</span>
+                    <h2 class="title">SEO</h2>
+                    <p class="decription">Lomi giúp các doanh nghiệp cải thiện khả năng hiển thị trực tuyến. Liên hệ với chúng tôi nếu doanh nghiệp bạn đang gặp khó khăn trong việc tăng lưu lượng truy cập tự nhiên và xếp hạng từ khóa cao hơn cho website của mình!</p>
+                    <button class="get-receice-price"><a href="#">NHẬN BÁO GIÁ SEO   <img src="./asset/images/vector.png" /></a></button>
+                </div>
+                <div class="description">
+                    <div class="description-position">
+                        <div class="position-label">
+                            <h2 class="label-supper">Lomi cung cấp cho bạn...</h2>
+                            <p>Lomi sẵn sàng giải đáp mọi thắc mắc của bạn ở đây. Đừng ngần ngại liên hệ với chúng tôi nếu bạn cần được tư vấn.</p>
+                        </div>
+                        <div class="position-content">
+                            <div class="accordion-wrapper">
+                                <div class="accordion">
+                                    <div class="accordion-section">
+                                        <div class="accordion-body">
+                                            <div class="label">
+                                                <h3 class="accordion__title">Đánh Giá Tổng Quan Trang Web </h3>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <br> Lomi sẽ kiểm tra tổng quan website của bạn để đánh giá nội dung trên từng trang và mức độ tương tác với người dùng.</br>
+                                                <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-body">
+                                            <div class="label">
+                                                <h3 class="accordion__title">Nghiên Cứu Từ Khóa</h3>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <br> Lomi sẽ nghiên cứu các từ khóa SEO có liên quan đến sản phẩm / dịch vụ của bạn có thể nhắm chính xác vào đối tượng mục tiêu mong muốn.</br><br>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-body">
+                                            <div class="label">
+                                                <h3 class="accordion__title">Tối Ưu Hóa Nội Dung Chuẩn SEO</h3>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <br> Lomi tạo ra những nội dung chất lượng cho website bạn, từ các bài viết blog, bài đăng Social Media cho đến bài quảng cáo bán hàng hấp dẫn nhất.<br>
+                                                <br> Đồng thời, chúng tôi sẽ tối ưu hóa nội dung để đưa bài viết lên top, quảng bá thương hiệu trực tuyến, tiếp cận khách hàng tiềm năng và chuyển đổi ROI thành công.</br><br>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-body">
+                                            <div class="label">
+                                                <h3 class="accordion__title">Sửa Đổi Không Giới Hạn</h3>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <br> Lomi luôn sẵn sàng chỉnh sửa / thay đổi văn bản không giới hạn đối với yêu cầu của bạn cho đến khi hài lòng.</br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-content">
+                    <div class="entry-content-text">
+                        <p claas="content-text">
+                            Chắc chắn, tất cả chúng ta đều có thể viết đủ tốt để mô tả doanh nghiệp và sản phẩm của mình. Nhưng tạo ra một thông tin hấp dẫn, ngắn gọn, mang tính giáo dục và cung cấp dữ liệu chi tiết thì làm như thế nào? Làm thế nào tạo ra bài viết đảm bảo các yếu
+                            tố về bố cục, câu từ, cách diễn đạt có giá trị để thu hút người đọc, mà còn phải đáp ứng các tiêu chí của công cụ tìm kiếm Digital?
+                        </p>
+                        <p claas="content-text"><span style="font-weight: 400;">Có đến </span><a href="https://www.hubspot.com/marketing-statistics?__hstc=191390709.9591bfdc632e4ad157f25e04876b4668.1532077627916.1533883934918.1533901852570.8&amp;__hssc=191390709.1.1533901852570&amp;__hsfp=2581482987"
+                                rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">72% các Marketer đồng ý rằng nội dung chất lượng chính là chiến lược SEO hiệu quả nhất</span></a><span style="font-weight: 400;">. Nếu Google là người yêu cầu nội dung như vậy, bạn sẽ viết gì để bán dịch vụ / sản phẩm đến hàng nghìn người đọc trong địa phương của mình? Hay hàng tỷ người trên toàn cầu? Đâu là mục đích cốt lõi của Copywriting?&nbsp;</span></p>
+                        <p claas="content-text"><i><span style="font-weight: 400;">=&gt; Tạo nội dung SEO chất lượng, thú hút người xem, thúc đẩy lượng truy cập và chuyển đổi thành khách hàng.</span></i><span style="font-weight: 400;">&nbsp;</span></p>
+                        <p claas="content-text"><span style="font-weight: 400;">Nền tảng của Viết bài quảng cáo SEO tạo ra nội dung có giá trị phù hợp để tạo sự chú ý đến các công cụ tìm kiếm, đặc biệt là Google. Lomi Digital Marketing Agency với đội ngũ chuyên gia Content Creator luôn đi theo xu hướng, tạo ra giá trị cao và nhắm đúng Nhân khẩu học mục tiêu doanh nghiệp, đặc biệt luôn đảm bảo bài viết được tối ưu chuẩn SEO cho các công cụ tìm kiếm.&nbsp;&nbsp;</span></p>
+                        <div class="img-writing"></div>
+                        <h2>Viết bài quảng cáo SEO là gì?</h2>
+                        <p claas="content-text">
+                            Viết bài quảng cáo SEO là nghệ thuật sáng tạo nội dung hấp dẫn, thu hút người đọc bằng những thông tin hữu ích được đăng tải trên website / blog doanh nghiệp.
+                        </p>
+                        <p claas="content-text">
+                            Người dùng Internet muốn tìm kiếm website sẽ nhập một từ khóa / cụm từ khóa trên thanh công cụ tìm kiếm, kết quả sẽ trả về danh sách các trang web liên quan để người dùng xem xét. Nội dung bài viết chuẩn SEO phải đảm bảo chứa các từ khóa hoặc cụm từ khóa
+                            liên quan, được người dùng truy vấn nhiều nhất và có xuất hiện trong danh sách này.
+                        </p>
+                        <p claas="content-text">
+                            Ví dụ rõ hơn: Người dùng tìm kiếm cụm từ khóa “nhà hàng thuần chay tốt nhất gần tôi” trên Google. Thuật toán của Google sẽ phản hồi với hàng loạt kết quả gồm các cơ sở thuần chay phổ biến và gần nhất trong khu vực địa phương của người tìm kiếm. Nếu nội
+                            dung trên website được tối ưu SEO tốt thì khả năng xếp hạng lên TOP Google là rất cao.
+                        </p>
+                        <p claas="content-text"><i><span style="font-weight: 400;">Có khoảng </span></i><a href="https://www.internetworldstats.com/stats.htm" rel="nofollow noopener" target="_blank"><i><span style="font-weight: 400;">4,2 tỷ người dùng internet</span></i></a><i><span style="font-weight: 400;">&nbsp; và </span></i>
+                            <a href="https://www.internetworldstats.com/stats.htm" rel="nofollow noopener" target="_blank"><i><span style="font-weight: 400;">80% người tiêu dùng</span></i></a><i><span style="font-weight: 400;">, có đến </span></i><a href="https://www.webfx.com/blog/marketing/marketing-stats/#content"
+                                rel="nofollow noopener" target="_blank"><i><span style="font-weight: 400;">70% doanh nghiệp</span></i></a><i><span style="font-weight: 400;"> chọn công cụ tìm kiếm để nghiên cứu hành vi mua hàng tiếp theo của người dùng. </span></i>
+                            <span style="font-weight: 400;">Điều này cho thấy các doanh nghiệp cần đầu tư vào các dịch vụ Viết bài quảng cáo SEO chuyên nghiệp để mang lại kết quả tối ưu.&nbsp;</span>
+                        </p>
+                        <p claas="content-text">
+                            Đội ngũ Content Writer của Lomi giàu kinh nghiệm, với khả năng bắt trend nhanh nhất, sẽ sáng tạo nội dung độc đáo và hấp dẫn trên website của bạn nhằm tiếp cận đối tượng người dùng mục tiêu chính xác. Đồng thời, đội ngũ SEO và Digital Marketing của chúng
+                            tôi sẽ thực thi các kỹ thuật đặc biệt để đảm bảo nội dung bài viết được tối ưu hóa và có chứa những từ khóa mang tính thúc đẩy tỷ lệ chuyển đổi bán hàng hiệu quả.
+                        </p>
+                        <h2>Những lợi ích của Viết bài quảng cáo SEO là gì?</h2>
+                        <p claas="content-text">
+                            Viết bài quảng cáo SEO tốt mang lại nhiều lợi ích tuyệt vời cho người dùng và cả doanh nghiệp:
+                            <ul>
+                                <li>
+                                    &nbsp; Người dùng nhận được thông tin hữu ích mà họ đang tìm kiếm.
+                                </li>
+                                <li>
+                                    &nbsp; Tăng cơ hội tiếp cận và tương tác đến người dùng tốt hơn cũng như cải thiện doanh số bán hàng hiệu quả.
+                                </li>
+                            </ul>
+                        </p>
+                        <p claas="content-text">
+                            Thêm vào đó, SEO Copywriting sẽ giúp website doanh nghiệp được index nhanh hơn, thu hút lượng lớn truy cập tự nhiên vào trang web của bạn.
+                        </p>
+                        <p claas="content-text">
+                            Viết bài quảng cáo SEO là nền tảng của việc tối đa hóa khả năng hiển thị trực tuyến và tiếp cận đối tượng mục tiêu. Với sự hỗ trợ từ dịch vụ SEO Copywriting chuyên nghiệp của Lomi sẽ giúp doanh nghiệp bạn thu được nhiều lợi ích:
+                            <ul>
+                                <li>
+                                    <span class="text-weight">Xếp hạng tìm kiếm trang web: &nbsp;</span> Tối ưu chuẩn SEO cho nội dung website giúp sản phẩm và thương hiệu của bạn hiển thị nhiều hơn. Điều này sẽ cải thiện thứ hạng trên Điều này SERP (Trang
+                                    kết quả của công cụ tìm kiếm) để thu hút người dùng click chuột nhiều hơn.
+                                </li>
+                                <li>
+                                    <span class="text-weight">Tối ưu chi phí:&nbsp;</span>Cho dù nội dung gốc của bạn có tuyệt vời như thế nào, để hoàn thành và tối ưu SEO thì vẫn sẽ mất nhiều thời gian. Ngay cả khi doanh nghiệp bạn lựa chọn hình thức
+                                    quảng bá nội dung bằng các chiến dịch quảng cáo, vẫn sẽ tốn khá nhiều chi phí để tiếp cận nhóm đối tượng đa dạng trên diện rộng.
+                                </li>
+                            </ul>
+                        </p>
+                        <p claas="content-text">
+                            Tạo ra một bài viết SEO Copywriting hiệu quả sẽ nhắm chính xác vào những khách hàng mục tiêu đang tìm kiếm những thông tin liên quan đến dịch vụ / sản phẩm của doanh nghiệp. Một nội dung hay sẽ thúc đẩy lượng người dùng truy cập tự nhiên vào website của
+                            bạn.
+                            <ul>
+                                <li>
+                                    <span class="text-weight">Khả năng tiếp cận trực tuyến: &nbsp;</span> Tăng nhận diện thương hiệu tích cực sẽ tạo sự tin cậy cao trong mắt người dùng, giúp doanh nghiệp có thể tiếp cận mục tiêu dễ dàng hơn. Nội dung
+                                    Copywriting SEO tốt phải đảm bảo có chứa các từ khóa chính được index tốt sẽ giúp khách hàng tự tìm đến với doanh nghiệp, đồng nghĩa lượng doanh thu bán hàng của bạn sẽ tăng => tỷ lệ ROI cao.
+                                </li>
+                                <li>
+                                    <span class="text-weight">Duy trì tính cạnh tranh:&nbsp;</span>Viết bài quảng cáo SEO tốt sẽ giúp website phát triển bền vững, đáp ứng mọi nhu cầu của khách hàng. Cập nhật nội dung SEO liên tục cho website là cực kỳ
+                                    quan trọng để bạn có thể hiển thị giữa các đối thủ cạnh tranh. Do đó, hãy duy trì khả năng cạnh tranh bằng các thông tin mới về dịch vụ / sản phẩm theo xu hướng để luôn nổi bật trong ngành.
+                                </li>
+                            </ul>
+                        </p>
+                        <div class="img-benefit"></div>
+                        <h2>Quy trình Viết bài quảng cáo SEO như thế nào?</h2>
+                        <p claas="content-text">
+                            Đội ngũ SEO Copywriting của Lomi giàu kinh nghiệm trong việc sáng tạo nội dung độc đáo, giá trị cho người dùng trực tuyến. Chúng tôi hiểu rõ cách triển khai nội dung, tối ưu chuẩn SEO và tâm lý của người dùng trước khi mua hàng để cung cấp những bài viết
+                            tốt nhất thúc đẩy họ hành động.
+                        </p>
+                        <p claas="content-text">
+                            Tạo nội dung SEO sẽ tập trung vào việc lựa chọn các từ khóa / cụm từ khóa hoàn hảo để thu hút Nhân khẩu học theo mục tiêu của doanh nghiệp bạn. Từ tiêu đề danh mục tiêu đề bài viết, mô tả sản phẩm, blog và thông tin công ty,… sử dụng các cụm từ khóa dài
+                            thu hút radar của Google.
+                        </p>
+                        <p claas="content-text">
+                            <p><span style="font-weight: 400;">Một website đăng tải nhiều nội dung SEO tốt có thể tăng lượng truy cập chất lượng lên đến </span>
+                                <a href="https://optinmonster.com/seo-statistics/#contentmktg" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">2.000%</span></a><span style="font-weight: 400;">, thật đáng kinh ngạc đúng không? Viết bài quảng cáo SEO hoạt động như thế nào? Làm cách nào để đội ngũ Content Writer của Lomi tạo ra những kết quả tốt nhất cho doanh nghiệp bạn?</span></p>
+                            <ul>
+                                <li>
+                                    <span class="text-weight">Tư vấn kinh doanh:&nbsp;</span> Lomi sẽ làm việc chặt chẽ với doanh nghiệp để xác định mục tiêu kinh doanh, Nhân khẩu học, sản phẩm / dịch vụ và quan trọng nhất là trang web! Đội ngũ Content
+                                    Creator sẽ xem xét dữ liệu website của bạn và dữ liệu Google từ các đối thủ cạnh tranh để đưa ra chiến lược phát triển nội dung phù hợp nhất với tầm nhìn của bạn.
+                                </li>
+                                <li>
+                                    <span class="text-weight">Nghiên cứu từ khóa / cụm từ khóa:&nbsp;</span> Tối ưu hóa nội dung bằng các thuật toán chuyên sâu để tìm kiếm các từ khóa / cụ từ khóa phù hợp với mục tiêu của doanh nghiệp. Để khi người dùng
+                                    truy vấn thông tin liên quan đến dịch vụ / sản phẩm sẽ nhìn thấy website của bạn tại vị trí TOP đầu trên công cụ tìm kiếm Google.
+                                </li>
+                                <li>
+                                    <span class="text-weight">Chỉnh sửa SEO:&nbsp;</span> Đội ngũ Content Writer của Lomi sẽ thực hiện điều chỉnh nội dung và tối ưu các tính năng SEO để nội dung trở nên hấp dẫn với người dùng và thân thiện với các công
+                                    cụ tìm kiếm. Các yếu tố mà chúng tôi quan tâm khi chỉnh sửa nội dung SEO là: Tiêu đề bài viết, định dạng đoạn văn, độ dài câu, cách sử dụng / chèn các từ khóa, mô tả bài viết…
+                                </li>
+                                <li>
+                                    <span class="text-weight">Làm mới / thay đổi trang web:&nbsp;</span> Dựa vào tình trạng hiện tại của website, đội ngũ Viết bài quảng cáo SEO sẽ xem xét các nội dung nào cần được sửa lại hoặc loại bỏ để có thể tối ưu
+                                    hóa SEO trên toàn bộ trang web tốt nhất. Ngoài việc thêm vào các từ khóa liên quan có tiềm năng thu hút traffic, chúng tôi sẽ thực hiện các kỹ thuật tối ưu hóa trang web thân thiện hơn với người dùng và các công cụ
+                                    tìm kiếm. Đồng thời thêm nhiều liên kết các liên kết có liên quan, hình ảnh và các phương tiện khác hỗ trợ tốt cho SEO.
+                                </li>
+                                <li>
+                                    <span class="text-weight">Viết nội dung SEO &nbsp;</span> (viết quảng cáo, thông tin sản xuất E-commerce, viết quảng cáo kỹ thuật, nội dung dạng dài và các mẹo hướng dẫn sử dụng chi tiết): Một SEO copywriter giàu kinh
+                                    nghiệm không chỉ sáng tạo nội dung mà còn biết cách thực hiện tối ưu hóa nội dung SEO. Sau khi xem xét nội dung trang web, chúng tôi sẽ đưa thêm những từ khóa / cụm từ khóa (đã được nghiên cứu) để thu hút Google. Thêm
+                                    vào đó, chuyên gia SEO Lomi sẽ triển khai một cấu trúc chuẩn cho các bài blog trong tương lai để thúc đẩy người xem click vào.
+
+                                </li>
+                            </ul>
+                        </p>
+                        <div class="img-process"></div>
+                        <h2>Chi phí dịch vụ Viết bài quảng cáo SEO bao nhiêu?</h2>
+                        <p claas="content-text">
+                            Mức giá dịch vụ Viết bài quảng cáo SEO tại các Agency Việt Nam hiện nay không quá cao, lên hệ ngay Lomi để được các chuyên viên tư vấn báo giá chi tiết hơn. Các chuyên gia Lomi sẽ kiểm tra tổng thể nội dung hiện tại trên website và mục tiêu kinh doanh
+                            của bạn để đưa ra một chiến lược phát triển phù hợp với mức chi phí minh bạch.
+                        </p>
+                        <p claas="content-text link-contact">
+                            Nếu bạn còn bất kỳ thắc mắc nào / muốn được chia sẻ thêm về các kiến thức SEO, Content, Digital Marketing… hãy để lại bình luận <button class="link-contact">tại đây</button> , Lomi sẽ phản hồi sớm nhất!
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
             </div>
-            <div id="simple1" class="box-search">
-                history3
+            <div id="price" class="box-search">
+                <div class="price-main">
+                    <div class="price-main-introduce">
+                        <h1>Dịch Vụ Viết Bài SEO - Chỉ Từ 900.000đ/ Tháng</h1>
+                    </div>
+                    <div class="price-main-solution">
+                        <ul class="checklist-ul">
+                            <li>Tối ưu chi phí vận hành</li>
+                            <li>Tối đa hiệu quả kinh doanh</li>
+                            <li>Tiết kiệm thời gian</li>
+                        </ul>
+                    </div>
+                    <div class="price-main-difficult">
+                        <h2>KHÓ KHĂN</h2>
+                        <p>mà doanh nghiệp bạn đang gặp phải là gì</p>
+                    </div>
+                    <div class="price-main-share">
+                        <div id="GROUP57" class="ladi-element ladi-animation">
+                            <div id="group1" class="ladi-element-item">
+                                <div class="ladi-group">
+                                    <div class="ladi-element title">
+                                        <h3 class="ladi-headline">Thời gian</h3>
+                                    </div>
+                                    <div class="ladi-element content">
+                                        <h3 class="ladi-headline">Bạn quá bận rộn và không đủ thời gian tìm hiểu chủ đề, đăng bài thường xuyên cho Fanpage&nbsp;<br></h3>
+                                    </div>
+                                    <div class="ladi-element-number number">
+                                        <h3 class="ladi-number">01</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group2" class="ladi-element-item">
+                                <div class="ladi-group">
+                                    <div class="ladi-element title">
+                                        <h3 class="ladi-headline">Kinh nghiệm</h3>
+                                    </div>
+                                    <div class="ladi-element content">
+                                        <h3 class="ladi-headline">Bạn thiếu kinh nghiệm xây dựng nội dung khiến cho Fanpage tương tác thấp, kém chuyên nghiệp</h3>
+                                    </div>
+                                    <div class="ladi-element-number number">
+                                        <h3 class="ladi-number">02</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group3" class="ladi-element-item">
+                                <div class="ladi-group">
+                                    <div class="ladi-element title">
+                                        <h3 class="ladi-headline">Chi phí</h3>
+                                    </div>
+                                    <div class="ladi-element content">
+                                        <h3 class="ladi-headline">Chi phí lương thưởng cho nhân sự quá cao, không tương xứng với những công việc bạn đang cần&nbsp;&nbsp;<br></h3>
+                                        <div class="ladi-line">
+                                        </div>
+                                    </div>
+                                    <div class="ladi-element-number number">
+                                        <h3 class="ladi-number">03</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="group4" class="ladi-element-item">
+                                <div class="ladi-group">
+                                    <div class="ladi-element title">
+                                        <h3 class="ladi-headline">Nhân sự</h3>
+                                    </div>
+                                    <div class="ladi-element content">
+                                        <h3 class="ladi-headline">Bạn gặp khó khăn trong vấn đề tuyển dụng, đào tạo nhân sự có kinh nghiệm, chuyên môn cao<br></h3>
+                                    </div>
+                                    <div class="ladi-element-number number">
+                                        <h3 class="ladi-number">04</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-main-content">
+                        <h3 class="header1">Bảng báo giá</h3>
+                        <h3 class="header2">DỊCH VỤ QUẢN TRỊ FANPAGE</h3>
+                        <div class="line"></div>
+                        <div class="list-group-price">
+                            <div class="group-price">
+                                <h3 class="title">GÓI CƠ BẢN</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button class="modalBtn">Đăng ký ngay</button></div>
+                            </div>
+                            <div class="group-price">
+                                <h3 class="title">GÓI NÂNG CAO</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button class="modalBtn">Đăng ký ngay</button></div>
+                            </div>
+                            <div class="group-price">
+                                <h3 class="title">GÓI CAO CẤP</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button class="modalBtn">Đăng ký ngay</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-main-content">
+                        <h3 class="header1">Bảng báo giá</h3>
+                        <h3 class="header2">DỊCH VỤ CONTENT WEBSITE</h3>
+                        <div class="line"></div>
+                        <div class="list-group-price">
+                            <div class="group-price">
+                                <h3 class="title">GÓI CƠ BẢN</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button class="modalBtn">Đăng ký ngay</button></div>
+                            </div>
+                            <div class="group-price">
+                                <h3 class="title">GÓI NÂNG CAO</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button class="modalBtn">Đăng ký ngay</button></div>
+                            </div>
+                            <div class="group-price">
+                                <h3 class="title">GÓI CAO CẤP</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button class="modalBtn">Đăng ký ngay</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="price-main-content">
+                        <h3 class="header1">Dự án của chúng tôi</h3>
+                        <h3 class="header2">Nơi chúng tôi gửi gắm tâm huyết và nỗ lực vì thành công của khách hàng</h3>
+                        <div class="line-description"></div>
+                        <h4 class="description">Với hơn 04 năm kinh nghiệm, chúng tôi đã triển khai hàng trăm dự án với đa dạng các ngành nghề như: F&B, Thời trang, Bất động sản, Nha khoa, Spa, Fitness, Đào tạo, Du lịch... Vì vậy chúng tôi tự tin xây dựng chiến lược phù hợp
+                            với ngành nghề của bạn</h4>
+                        <div class="list-group-price">
+                            <div class="group-price">
+                                <h3 class="title">GÓI CƠ BẢN</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button>Đăng ký ngày</button></div>
+                            </div>
+                            <div class="group-price">
+                                <h3 class="title">GÓI NÂNG CAO</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button>Đăng ký ngày</button></div>
+                            </div>
+                            <div class="group-price">
+                                <h3 class="title">GÓI CAO CẤP</h3>
+                                <div class="price-item">
+                                    <p>900.000đ</p>
+                                </div>
+                                <div class="decription-item">
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                        <li>
+                                            Tối ưu SEO cho Fanpage
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-register"><button>Đăng ký ngày</button></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="price-main-content content-process">
+                        <h3 class="header1">Quy trình hợp tác</h3>
+                        <div class="line"></div>
+                        <div class="price-main-share">
+                            <div id="GROUP57" class="ladi-element ladi-animation">
+                                <div id="groupa1" class="ladi-element-item">
+                                    <div class="ladi-group">
+                                        <div class="ladi-element title">
+                                            <h3 class="ladi-headline">Thấu hiểu khách hàng</h3>
+                                        </div>
+                                        <div class="ladi-element-number number">
+                                            <h3 class="ladi-number-process">01</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="groupa2" class="ladi-element-item">
+                                    <div class="ladi-group">
+                                        <div class="ladi-element title">
+                                            <h3 class="ladi-headline">Lập kế hoạch marketing</h3>
+                                        </div>
+                                        <div class="ladi-element content">
+                                            <div class="process-line">
+                                            </div>
+                                        </div>
+                                        <div class="ladi-element-number number">
+                                            <h3 class="ladi-number-process">02</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="groupa3" class="ladi-element-item">
+                                    <div class="ladi-group">
+                                        <div class="ladi-element title">
+                                            <h3 class="ladi-headline">Ký kết hợp đồng</h3>
+                                        </div>
+                                        <div class="ladi-element content">
+                                            <div class="process-line">
+                                            </div>
+                                        </div>
+                                        <div class="ladi-element-number number">
+                                            <h3 class="ladi-number-process">03</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="groupa4" class="ladi-element-item">
+                                    <div class="ladi-group">
+                                        <div class="ladi-element title">
+                                            <h3 class="ladi-headline">Triển khai kế hoạch</h3>
+                                        </div>
+                                        <div class="ladi-element content">
+                                            <div class="process-line">
+                                            </div>
+                                        </div>
+                                        <div class="ladi-element-number number">
+                                            <h3 class="ladi-number-process">04</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="groupa5" class="ladi-element-item">
+                                    <div class="ladi-group">
+                                        <div class="ladi-element title">
+                                            <h3 class="ladi-headline">Báo cáo và đánh giá</h3>
+                                        </div>
+                                        <div class="ladi-element-number number">
+                                            <h3 class="ladi-number-process">05</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="simple2" class="box-search">
-                4
+            <div id="blog" class="box-search">
+                history3 4
             </div>
-            <div id="calendar1" class="box-search">
+            <div id="contact" class="box-search">
                 <div class="main-wapper-contact">
                     <div class="main-wapper-contents-contact">
                         <div class="banner-img">
@@ -272,97 +769,120 @@
                     <div class="custom_main_container">
                         <div class="main-container-form">
                             <div class="form-title">
-                                <h2>Liên hệ LoMi</h2>
+                                <h2>Liên hệ Lomi</h2>
                             </div>
                             <div class="form-decription">
                                 <span class="decription 1">
-                                    Cảm ơn anh/chị đã tin tưởng LoMi! Anh/chị vui lòng liên hệ theo một trong các thông tin bí mật sau đây:
-                                    <br>
-                                    &nbsp;- Fanpage: <a style="max-width: 250px;" class="_1drp _5lv6" title="LoMi Boutique" href="https://www.facebook.com/lomicontentchuanSEO.vn/" target="_blank">LoMi Boutique</a>
-                                    <br>
-                                    &nbsp;- Hotline: 0983 146 816
-                                    <br>
-                                    &nbsp;- Email: kieumi197@gmail.com
-                                    <br>
-                                    &nbsp;- Địa chỉ: 02 Ngô Thì Hương - P.Nại Hiên Đông - Q.Sơn Trà - TP.Đà Nẵng</span>
+                                    Cảm ơn anh/chị đã tin tưởng Lomi! Anh/chị vui lòng liên hệ theo một trong các thông tin bí mật sau đây:
+                                    <ul style="list-style-type:square">
+                                        <li>
+                                            Fanpage: <a style="max-width: 250px;" class="_1drp _5lv6" title="Lomi Boutique" href="https://www.facebook.com/LomicontentchuanSEO.vn/" target="_blank">Lomi Boutique</a>
+                                        </li>
+                                        <li>
+                                            Hotline: 0983 146 816
+                                        </li>
+                                        <li>
+                                            Email: kieumi197@gmail.com
+                                        </li>
+                                        <li>
+                                            Địa chỉ: 02 Ngô Thì Hương - P.Nại Hiên Đông - Q.Sơn Trà - TP.Đà Nẵng</span>
+                                </li>
+                                </ul>
                                 <span class="decription 2">
                                     Sau khi cung cấp yêu cầu và chi tiết bài viết, anh/chị sẽ nhận được báo giá trong thời gian sớm nhất. Và những điều sau đây luôn được cam kết trong mọi dự án:
-                                    <br>
-                                    &nbsp;* Luôn đúng deadline
-                                    <br>
-                                    &nbsp;* Chất lượng là ưu tiên hàng đầu
-                                    <br>
-                                    &nbsp;* Copy là chuyện không tưởng</span>
+                                    <ul>
+                                        <li>
+                                            Luôn đúng deadline
+                                        </li>
+                                        <li>Chất lượng là ưu tiên hàng đầu
+                                            
+                                        </li>
+                                        <li>
+                                            Copy là chuyện không tưởng
+                                        </li>
+                                    </ul>
+                                    
                             </div>
                             <div class="form-content">
                                 <div class="form-content-input">
                                     <span class="form-content-input-label">TÊN CỦA BẠN (BẮT BUỘC)</span>
-                                    <input type="text" class="input-txt">
-                                </div>
-                                <div class="form-content-input">
-                                    <span class="form-content-input-label">ĐỊA CHỈ EMAIL (BẮT BUỘC)</span>
-                                    <input type="text" class="input-txt">
-                                </div>
-                                <div class="form-content-input">
-                                    <span class="form-content-input-label">TIÊU ĐỀ THƯ:</span>
-                                    <input type="text" class="input-txt">
-                                </div>
-                                <div class="form-content-input">
-                                    <span class="form-content-input-label">NỘI DUNG CẦN TƯ VẤN</span>
-                                    <input type="text" class="input-txt">
-                                </div>
-                                <div class="form-content-submit">
-                                    <button type="submit" class="btn-submit">GỬI ĐI</button>
-                                </div>
-
+                                <input type="text" class="input-txt" placeholder="Vui lòng nhập tên ...">
                             </div>
+                            <div class="form-content-input">
+                                <span class="form-content-input-label">ĐỊA CHỈ EMAIL (BẮT BUỘC)</span>
+                                <input type="text" class="input-txt" placeholder="Vui lòng nhập email ...">
+                            </div>
+                            <div class="form-content-input">
+                                <span class="form-content-input-label">TIÊU ĐỀ THƯ:</span>
+                                <input type="text" class="input-txt" placeholder="Vui lòng nhập tiêu đề thư ...">
+                            </div>
+                            <div class="form-content-input">
+                                <span class="form-content-input-label" placeholder="Hãy nói gì đó ...">NỘI DUNG CẦN TƯ VẤN</span>
+                                <textarea></textarea>
+                            </div>
+                            <div class="form-content-submit">
+                                <button type="submit" class="btn-submit">GỬI ĐI</button>
+                            </div>
+
                         </div>
-                        <div class="main-container-careers">
-                            <div class="contact-us-image">
-                                <div class="main-container-careers-email">
-                                    <span class="careers-title">For all other enquiries:</span>
-                                    <span class="careers-content">Email: longnt200195@gmail.com</span>
-                                </div>
-                                <div class="main-container-careers-offical">
-                                    <span class="careers-title">Careers</span>
-                                    <span class="careers-content">If you’re interested in employment opportunities at Venus Beauty, please contact us:</span>
-                                    <span class="careers-content-mail">longnt200195@gmail.com</span>
-                                </div>
+                    </div>
+                    <div class="main-container-careers">
+                        <div class="contact-us-image">
+                            <div class="main-container-careers-email">
+                                <span class="careers-title">For all other enquiries:</span>
+                                <span class="careers-content">Email: longnt200195@gmail.com</span>
+                            </div>
+                            <div class="main-container-careers-offical">
+                                <span class="careers-title">Careers</span>
+                                <span class="careers-content">If you’re interested in employment opportunities at Venus Beauty, please contact us:</span>
+                                <span class="careers-content-mail">longnt200195@gmail.com</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <div class="form-register">
+                    <h3 class="title">ĐĂNG KÍ NHẬN TƯ VẤN MIỄN PHÍ</h3>
+                    <input class="input username" placeholder="Họ và tên">
+                    <input class="input number-phone" placeholder="Số điện thoại">
+                    <input class="input note" placeholder="Ghi chú">
+                    <div class="btn-signin"><button class="btn-submit button-wiggle">Đăng ký tư vấn</button></div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="footer-main">
                 <div class="footer-main-content">
                     <div class="footer-customer-support title">
-                        <h5>ĐÔI NÉT VỀ LOMI</h5>
+                        <h5>LIÊN HỆ</h5>
                     </div>
                     <div class="footer-customer-support content">
                         <div class="menu-footer-container">
-                            <p>Lomi là dịch vụ viết bài SEO chuyên nghiệp và uy tín hàng đầu tại Đà Nẵng. Dịch vụ được thành lập bởi CEO Kiều Mi
-                                <br> Thông tin liên hệ
-                                <br>- HOTLINE: 0983 146 816
-                                <br>- EMAIL: kieumi197@gmail.com
-                                <br>- Fanpage: <a style="max-width: 250px;" class="_1drp _5lv6" title="LoMi Boutique" href="https://www.facebook.com/lomicontentchuanSEO.vn/" target="_blank">LoMi Boutique</a>
-                                <br>- Địa chỉ: 02 Ngô Thì Hương - P.Nại Hiên Đông - Q.Sơn Trà - TP.Đà Nẵng
-                            </p>
+                            <ul class="menu-item">
+                                <li class="item"><span>Hotline:&nbsp;</span> 0983 146 816</li>
+                                <li class="item"><span>Email:&nbsp;</span> kieumi197@gmail.com</li>
+                                <li class="item"><span>Fanpage:&nbsp;</span> <a style="max-width: 250px;" class="_1drp _5lv6" title="Lomi Boutique" href="https://www.facebook.com/LomicontentchuanSEO.vn/" target="_blank">Lomi Boutique</a></li>
+                                <li class="item"><span>Địa chỉ:&nbsp;</span> 02 Ngô Thì Hương - P.Nại Hiên Đông - Q.Sơn Trà - TP.Đà Nẵng</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="footer-main-content">
+                <div class="footer-main-content footer-service">
                     <div class="footer-contact-us title service">
                         <h5 class="title-service">DỊCH VỤ</h5>
                     </div>
                     <div class="footer-contact-us content service">
                         <div class="menu-footer-container">
                             <ul class="menu-item">
-                                <li class="item"><a href="#">Content SEO</a></li>
-                                <li class="item"><a href="#">Chăm sóc Fanpage</a></li>
-                                <li class="item"><a href="#">Content website</a></li>
-                                <li class="item"><a href="#">Landing page</a></li>
+                                <li class="item"><a class="link-price">Viết bài SEO</a></li>
+                                <li class="item"><a class="link-price">Chăm sóc Fanpage</a></li>
                             </ul>
                         </div>
                     </div>
@@ -372,8 +892,8 @@
                         <h5 class="title-social">KẾT NỐI FANPAGE CHÚNG TÔI</h5>
                     </div>
                     <div id="fb-root"></div>
-                    <div class="fb-page" data-href="https://www.facebook.com/lomicontentchuanSEO.vn/" data-tabs="timeline" data-width="350" data-height="130" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
-                        <blockquote cite="https://www.facebook.com/lomicontentchuanSEO.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lomicontentchuanSEO.vn/">LoMi Boutique</a></blockquote>
+                    <div class="fb-page" data-href="https://www.facebook.com/LomicontentchuanSEO.vn/" data-tabs="timeline" data-width="350" data-height="130" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/LomicontentchuanSEO.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LomicontentchuanSEO.vn/">Lomi Boutique</a></blockquote>
                     </div>
                 </div>
             </div>
@@ -410,7 +930,6 @@
         $("#" + idTab + " .menu-search-title .triangle").removeClass("active");
         $("#" + idTab + " .menu-search-condition .item").removeClass("active");
         $("#" + idTab + " .menu-search-selected .value").removeClass("active");
-
         $(this).addClass("active");
         $(this).find('.triangle').addClass("active");
         let n = $(".menu-search-title .item").index(this);
@@ -418,6 +937,48 @@
         $(".menu-search-selected .value:eq(" + n + ")").addClass("active");
     });
 
+    $('.link-contact').on('click', function() {
+        var scrl = document.getElementsByClassName('box-search');
+        $("#tabs #seo .menu-search-title .item").removeClass("active");
+        $("#tabs #seo .menu-search-title .triangle").removeClass("active");
+        $("#tabs #seo .menu-search-condition .item").removeClass("active");
+        $("#tabs #seo .menu-search-selected .value").removeClass("active");
+        $(".item-menu-left #seo").find('.line').removeClass("active");
+        $(".item-menu-left #seo").find('.item').removeClass("checkfield-selected");
+        $(".item-menu-left #contact").find('.line').addClass("active");
+        $(".item-menu-left #contact").find('.item').addClass("checkfield-selected");
+        $('.box-search').removeClass("active");
+        $('.box-search#contact').addClass("active");
+        scrl.scrollTop = 0;
+    });
+    $('.get-receice-price').on('click', function() {
+        var scrl = document.getElementsByClassName('box-search');
+        $("#tabs #seo .menu-search-title .item").removeClass("active");
+        $("#tabs #seo .menu-search-title .triangle").removeClass("active");
+        $("#tabs #seo .menu-search-condition .item").removeClass("active");
+        $("#tabs #seo .menu-search-selected .value").removeClass("active");
+        $(".item-menu-left #seo").find('.line').removeClass("active");
+        $(".item-menu-left #seo").find('.item').removeClass("checkfield-selected");
+        $(".item-menu-left #price").find('.line').addClass("active");
+        $(".item-menu-left #price").find('.item').addClass("checkfield-selected");
+        $('.box-search').removeClass("active");
+        $('.box-search#price').addClass("active");
+        scrl.scrollTop = 0;
+    });
+    $('.link-seo').on('click', function() {
+        var scrl = document.getElementsByClassName('box-search');
+        $("#tabs #home .menu-search-title .item").removeClass("active");
+        $("#tabs #home .menu-search-title .triangle").removeClass("active");
+        $("#tabs #home .menu-search-condition .item").removeClass("active");
+        $("#tabs #home .menu-search-selected .value").removeClass("active");
+        $(".item-menu-left #home").find('.line').removeClass("active");
+        $(".item-menu-left #home").find('.item').removeClass("checkfield-selected");
+        $(".item-menu-left #seo").find('.line').addClass("active");
+        $(".item-menu-left #seo").find('.item').addClass("checkfield-selected");
+        $('.box-search').removeClass("active");
+        $('.box-search#seo').addClass("active");
+        scrl.scrollTop = 0;
+    });
     tsParticles.load("tsparticles", {
         fpsLimit: 60,
         particles: {
@@ -551,4 +1112,50 @@
             size: "cover"
         }
     });
+    $('.accordion-body').on("click", function(e) {
+        if ($('.accordion-body').hasClass('active')) {
+            $('.accordion-body').removeClass('active')
+        } else {
+            this.classList.toggle('active')
+        }
+    });
+    $('.link-price').on('click', function() {
+        var scrl = document.getElementsByClassName('box-search');
+        $("#tabs #home .menu-search-title .item").removeClass("active");
+        $("#tabs #home .menu-search-title .triangle").removeClass("active");
+        $("#tabs #home .menu-search-condition .item").removeClass("active");
+        $("#tabs #home .menu-search-selected .value").removeClass("active");
+        $(".item-menu-left #home").find('.line').removeClass("active");
+        $(".item-menu-left #home").find('.item').removeClass("checkfield-selected");
+        $(".item-menu-left #price").find('.line').addClass("active");
+        $(".item-menu-left #price").find('.item').addClass("checkfield-selected");
+        $('.box-search').removeClass("active");
+        $('.box-search#price').addClass("active");
+        scrl.scrollTop = 0;
+    });
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var close = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    $('.modalBtn').on('click', function() {
+        modal.style.display = "flex";
+    });
+    $('.get-receice-price').on('click', function() {
+        modal.style.display = "flex";
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    close.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>

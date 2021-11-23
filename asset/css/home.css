@@ -1,47 +1,57 @@
-#history1 .introduce {
+#tsparticles {
+    position: absolute;
     width: 100%;
-    height: 675px;
-    background-image: url("/asset/images/Content-images-background.png");
+    height: 77%;
+    background-color: rgb(13, 71, 161);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-#history1 .inner {
+.tsparticles-canvas-el {
+    background-image: url("/asset/images/seo-slide.jpg") !important;
+    position: unset !important;
+}
+
+#home .inner {
     display: flex;
     justify-content: center;
     color: aliceblue;
     margin-bottom: 55px;
 }
 
-#history1 .inner .text {
+#home .inner .text {
     z-index: 1;
     max-width: 65%;
-    margin: 0 auto;
-    text-shadow: 0px 0px 10px rgb(0 0 0 / 60%);
+    margin: 0px auto;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
     text-align: center !important;
 }
 
-#history1 .inner .text p {
+#home .inner .text p {
     font-size: 1.6em;
     line-height: 35px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
 }
 
-#history1 .inner h1 {
+#home .inner h1 {
     font-size: 70px;
     text-align: center;
     font-weight: 700;
 }
 
-#history1 .banner {
+#home .banner {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: absolute;
     width: 100%;
-    top: 580px;
+    top: 600px;
     background: transparent;
 }
 
-#history1 .banner .banner-item {
+#home .banner .banner-item {
     height: 350px;
     width: 25%;
     display: flex;
@@ -49,63 +59,62 @@
     justify-content: flex-start;
     border-radius: 10px;
     align-items: center;
-    padding-top: 20px;
-    font-family: 'Font Awesome 5 Free';
+    padding: 20px 60px 30px;
+    font-family: "Font Awesome 5 Free";
     margin-left: 30px;
     margin-right: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
 }
 
-#history1 .banner .banner-content {
-    background: #8bc34a;
+#home .banner .banner-content {
+    background: rgb(109, 158, 231);
 }
 
-#history1 .banner .banner-keyword {
-    background: #9be5fb;
+#home .banner .banner-keyword {
+    background: rgb(155, 229, 251);
 }
 
-#history1 .banner .banner-optimal {
-    background: #588afb;
+#home .banner .banner-optimal {
+    background: rgb(88, 138, 251);
 }
 
-#history1 .banner .icon {
+#home .banner .icon {
     width: 50px;
     height: 50px;
     font-size: 50px;
 }
 
-#history1 .banner .banner-item .banner-title {
+#home .banner .banner-item .banner-title {
     font-size: 32px;
 }
 
-#history1 .banner .banner-item p {
+#home .banner .banner-item p {
     font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
 }
 
-#history1 .drop-image {
+#home .drop-image {
     width: 1920px;
     height: 225px;
     background-image: url("/asset/images/bg-curve3-1903x98.png");
     margin-top: 210px;
 }
 
-#history1 .drop-image-content {
+#home .drop-image-content {
     width: 1920px;
     height: 200px;
     background-image: url("/asset/images/bg-curve3-1903x98.png");
 }
 
-#history1 .content-service .service {
+#home .content-service .service {
     width: 70%;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;
 }
 
-#history1 .content-service .service .content {
+#home .content-service .service .content {
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -113,94 +122,94 @@
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     justify-content: flex-start;
-    background: #f5f0f09c;
+    background: rgba(245, 240, 240, 0.61);
 }
 
-#history1 .content-service .service .content h3 {
-    color: #db13d5;
+#home .content-service .service .content h3 {
+    color: rgb(37, 90, 169);
     font-size: 30px;
     line-height: 50px;
-    border-bottom: 2px solid #db13d5;
+    border-bottom: 2px solid rgb(37, 90, 169);
 }
 
-#history1 .content-service .service .content p {
+#home .content-service .service .content p {
     line-height: 30px;
     font-size: 18px;
 }
 
-#history1 .content-service .content-seo .content {
+#home .content-service .content-seo .content {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-#history1 .content-service .content-website .content {
+#home .content-service .content-website .content {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#history1 .content-service .content-facebook .content {
+#home .content-service .content-facebook .content {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-#history1 .content-service .content-landingpage .content {
+#home .content-service .content-landingpage .content {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-#history1 .content-service .content-seo img {
+#home .content-service .content-seo img {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-#history1 .content-service .content-website img {
+#home .content-service .content-website img {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-#history1 .content-service .content-facebook img {
+#home .content-service .content-facebook img {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#history1 .content-service .content-landingpage img {
+#home .content-service .content-landingpage img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-#history1 .introduce-price {
+#home .introduce-price {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     margin-bottom: 20px;
     margin-top: 30px;
 }
 
-#history1 .content-service {
+#home .content-service {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 260px;
+    margin-top: 600px;
 }
 
-#history1 .introduce-price .subtitle {
+#home .introduce-price .subtitle {
     font-size: 18px;
-    color: #db13d5;
+    color: rgb(37, 90, 169);
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: Roboto;
 }
 
-#history1 .introduce-price h2 {
-    font-family: "Roboto";
+#home .introduce-price h2 {
+    font-family: Roboto;
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
 }
 
-#history1 .introduce-price .info-price {
+#home .introduce-price .info-price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -208,54 +217,56 @@
     width: 70%;
 }
 
-#history1 .introduce-price .info-price .info-price-fanpage {
+#home .introduce-price .info-price .info-price-fanpage {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#history1 .introduce-price .info-price .info-price-seo {
-    height: 610px !important;
-}
-
-#history1 .introduce-price .info-price .item {
+#home .introduce-price .info-price .item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #f5f0f09c;
+    background: rgba(253, 252, 251, 0.85);
     height: 550px;
     width: 30%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing-header {
+#home .introduce-price .info-price .element:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 16px 0px, rgba(0, 0, 0, 0.38) 0px 12px 30px 0px;
+    background: rgba(245, 240, 240, 0.61);
+}
+
+#home .introduce-price .info-price .item .penci-pricing-header {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-#history1 .introduce-price .info-price .item p {
+#home .introduce-price .info-price .item p {
     margin-bottom: 17px;
     text-align: left;
-    color: #363d4c;
-    font-family: system-ui;
-    font-size: larger;
+    color: rgb(54, 61, 76);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing__title {
+#home .introduce-price .info-price .item .penci-pricing__title {
     font-size: 34px;
     font-weight: 700;
     line-height: 50px;
     margin-top: 30px;
+    color: rgb(37, 90, 169);
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing__subtitle {
+#home .introduce-price .info-price .item .penci-pricing__subtitle {
     font-weight: 700;
     opacity: 0.7;
 }
 
-#history1 .introduce-price .info-price .item .penci-price-unit {
+#home .introduce-price .info-price .item .penci-price-unit {
     margin-top: 25px;
     margin-bottom: 10px;
     display: flex;
@@ -263,33 +274,33 @@
     align-items: center;
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing__price {
+#home .introduce-price .info-price .item .penci-pricing__price {
     font-size: 54px;
     font-weight: 700;
-    color: #2b82ac;
+    color: rgb(37, 90, 169);
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing-footer {
+#home .introduce-price .info-price .item .penci-pricing-footer {
     margin-top: 25px;
     width: 50%;
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing-footer button {
+#home .introduce-price .info-price .item .penci-pricing-footer button {
     width: 100%;
     height: 40px;
-    border: 1px solid #2b82ac;
-    background: #2b82ac;
+    border: 1px solid rgb(37, 90, 169);
+    background: rgb(37, 90, 169);
     border-radius: 5px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     outline: none;
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing-footer button:hover {
+#home .introduce-price .info-price .item .penci-pricing-footer button:hover {
     opacity: 0.7;
 }
 
-#history1 .introduce-price .info-price .item .penci-pricing-footer button a {
-    color: #fff;
+#home .introduce-price .info-price .item .penci-pricing-footer button a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
 }
@@ -297,11 +308,11 @@
 .hover .img {
     overflow: hidden;
     transform: rotate(0.0001deg);
-    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
 .hover img {
-    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
 .hover:hover .img {
@@ -312,68 +323,65 @@
     transform: scale(1.15);
 }
 
-#history1 .blog .info-price .item .penci-pricing__featured {
+#home .blog .info-price .item .penci-pricing__featured {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-#history1 .blog .info-price .item .penci-pricing__featured p {
+#home .blog .info-price .item .penci-pricing__featured p {
     margin-bottom: 50px;
     text-align: left;
-    color: #363d4c;
+    color: rgb(54, 61, 76);
     font-family: system-ui;
     font-size: medium;
 }
 
-#history1 .blog .info-price .item .img {
+#home .blog .info-price .item .img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#history1 .blog .info-price .item img {
+#home .blog .info-price .item img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#history1 .blog .info-price .item {
+#home .blog .info-price .item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #f5f0f09c;
+    background: rgba(245, 240, 240, 0.61);
     height: 500px;
     width: 30%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
 }
 
 .banner-item {
-    padding: 20px 20px;
+    padding: 20px;
     text-align: center;
     min-height: 350px;
 }
 
 .banner-item {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
+    transition: all 0.3s ease 0s;
     margin: 10px 0px;
 }
 
 .banner-item:hover {
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
     transform: translateY(-20px);
-    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 22px 43px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-#history1 .blog {
+#home .blog {
     margin-bottom: 100px !important;
 }
 
 .content-service .title-service {
-    font-family: "Roboto";
+    font-family: Roboto;
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
@@ -381,7 +389,7 @@
 
 .content-service .title-service .subtitle {
     font-size: 18px;
-    color: #db13d5;
+    color: rgb(219, 19, 213);
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: Roboto;
 }

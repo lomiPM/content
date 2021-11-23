@@ -1,0 +1,409 @@
+#price .price-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249 250 251);
+}
+
+#price .price-main .price-main-introduce {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient( 88deg, rgb(104 104 159), #385da7db);
+    margin-bottom: 15px;
+    color: #000;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#price .price-main .price-main-introduce h1 {
+    font: normal 5.5vh sans-serif;
+    mix-blend-mode: overlay;
+    background: radial-gradient(ellipse, white 90%, black 50%) #000 no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: slide 10s infinite ease-in-out;
+    animation: slide 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        background-position: -100vh center;
+    }
+    60%,
+    100% {
+        background-position: 100vh center;
+    }
+}
+
+@keyframes slide {
+    0% {
+        background-position: -200vh center;
+    }
+    60%,
+    100% {
+        background-position: 200vh center;
+    }
+}
+
+#price .price-main h2 {
+    font-size: 36.3px;
+    line-height: 1.2;
+    color: #111;
+    font-family: sans-serif;
+}
+
+#price .price-main .price-main-solution {
+    width: 1030px;
+    height: 13vh;
+}
+
+#price .price-main .checklist-ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: system-ui;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: cadetblue;
+}
+
+#price .price-main .decription-item .checklist-ul li {
+    color: #2eefdd !important;
+}
+
+#price .price-main .checklist-ul li {
+    padding: 0 0 0 25px;
+    position: relative;
+    margin-bottom: 10px;
+    color: #5088bf;
+}
+
+#price .price-main .checklist-ul li:before {
+    position: absolute;
+    left: 5px;
+    content: "✓";
+    color: #5088bf;
+}
+
+#price .price-main .price-main-difficult {
+    width: 1024px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#price .price-main .price-main-difficult h2 {
+    line-height: 0px;
+    margin-top: 80px;
+    color: rgb(49, 49, 186);
+    font-family: sans-serif;
+}
+
+#price .price-main .price-main-difficult p {
+    font-size: 36px;
+    font-family: sans-serif;
+    color: rgb(41, 41, 102);
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+#price .price-main .price-main-share {
+    width: 1010px;
+}
+
+#price .price-main .price-main-share .ladi-animation {
+    width: 100%;
+    height: 291px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(221 231 249 / 58%);
+    border-radius: 10px;
+}
+
+#price .price-main .price-main-share .ladi-animation .ladi-element-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+#price .price-main .price-main-share .ladi-animation .ladi-element-item .headline {
+    color: rgb(41, 41, 102);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#price .price-main .price-main-share .ladi-animation .ladi-element-item .content h3 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #5088bf;
+}
+
+#price .price-main .price-main-share .ladi-animation .ladi-element-item .title h3 {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    color: rgb(88, 88, 144);
+}
+
+#price .price-main .price-main-share .ladi-animation .ladi-element-item .ladi-line {
+    width: 1px;
+    height: 79px;
+    background-color: rgb(88, 88, 144);
+    position: absolute;
+    margin-left: 230px;
+    bottom: 198px;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item .process-line {
+    width: 1px;
+    height: 79px;
+    background-color: #5088bf;
+    position: absolute;
+    margin-left: 230px;
+    bottom: 264px;
+}
+
+#group2 {
+    border-radius: 10px;
+    height: 291px;
+    background: -webkit-linear-gradient( 120deg, rgba(60, 134, 255, 1.0), rgba(41, 41, 102, 1.0));
+    color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#groupa1 {
+    border-radius: 10px;
+    height: 230px;
+    background: -webkit-linear-gradient( 120deg, rgba(60, 134, 255, 1.0), rgba(41, 41, 102, 1.0));
+    color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ladi-number {
+    background: rgba(255, 236, 205, 0.0);
+    background: -webkit-linear-gradient( 120deg, rgba(255, 236, 205, 0.0), rgba(63, 137, 255, 0.2));
+    background: linear-gradient( 120deg, rgba(255, 236, 205, 0.0), rgba(63, 137, 255, 0.2));
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 0;
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 110px;
+    opacity: 0.7;
+}
+
+.ladi-number-process {
+    background: rgba(255, 236, 205, 0.0);
+    background: -webkit-linear-gradient( 120deg, rgba(255, 236, 205, 0.0), rgba(63, 137, 255, 0.2));
+    background: linear-gradient( 120deg, rgba(255, 236, 205, 0.0), rgba(63, 137, 255, 0.2));
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 0;
+    opacity: 0.7;
+}
+
+#price .price-main .price-main-content {
+    width: 1024px;
+    height: 700px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#price .price-main .content-process {
+    height: 450px !important;
+}
+
+#price .price-main .price-main-content .header1 {
+    color: rgb(49, 49, 186);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0;
+    text-shadow: rgb(235 235 255) 2px 2px 0px;
+}
+
+#price .price-main .price-main-content .header2 {
+    color: rgb(41, 41, 102);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+#price .price-main .price-main-content .line {
+    width: 100px;
+    border: 1px solid rgb(49, 49, 186);
+    margin-bottom: 50px;
+}
+
+#price .price-main .price-main-content .line-description {
+    width: 100px;
+    border: 1px solid rgb(49, 49, 186);
+}
+
+#price .price-main .price-main-content .list-group-price {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#price .price-main .price-main-content .group-price {
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient( 120deg, rgba(60, 134, 255, 1.0), rgba(41, 41, 102, 1.0));
+    width: 33%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#price .price-main .price-main-content .group-price .title {
+    font-size: 25px;
+}
+
+#price .price-main .price-main-content .group-price .price-item {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    background: rgba(161, 196, 253, 1.0);
+    background: -webkit-linear-gradient( 180deg, rgba(161, 196, 253, 1.0), rgba(194, 233, 251, 1.0));
+    background: linear-gradient( 180deg, rgba(161, 196, 253, 1.0), rgba(194, 233, 251, 1.0));
+    font-size: 24px;
+    line-height: 0px;
+    color: rgb(41, 41, 102);
+    margin-bottom: 40px;
+}
+
+#price .price-main .price-main-content .group-price .btn-register {
+    width: 100%;
+}
+
+#price .price-main .price-main-content .group-price .btn-register button {
+    width: 100%;
+    height: 56px;
+    background: rgba(161, 196, 253, 1.0);
+    background: -webkit-linear-gradient( 180deg, rgba(161, 196, 253, 1.0), rgba(194, 233, 251, 1.0));
+    background: linear-gradient( 180deg, rgba(161, 196, 253, 1.0), rgba(194, 233, 251, 1.0));
+    border: 1px solid rgba(161, 196, 253, 1.0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 22px;
+}
+
+#price .price-main .price-main-content .group-price .btn-register button:hover {
+    opacity: 0.6;
+}
+
+#price .price-main .price-main-content .group-price .decription-item {
+    height: 277px;
+    text-align: left;
+    width: 90%;
+}
+
+#price .price-main .price-main-content .description {
+    color: rgb(88, 88, 144);
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#price .price-main .price-main-content .ladi-animation {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(221 231 249 / 58%);
+    border-radius: 10px;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item {
+    padding-left: 25px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 145px;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item .headline {
+    color: rgb(41, 41, 102);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item .content h3 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #5088bf;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item .title h3 {
+    font-size: 27px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    color: rgb(88, 88, 144);
+    height: 77px;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item .ladi-line {
+    width: 1px;
+    height: 79px;
+    background-color: #5088bf;
+    position: absolute;
+    margin-left: 230px;
+    bottom: 264px;
+}
+
+#price .price-main .price-main-content .ladi-animation .ladi-element-item .process-line {
+    width: 1px;
+    height: 79px;
+    background-color: rgb(88, 88, 144);
+    position: absolute;
+    margin-left: 170px;
+    bottom: -1785px;
+}
+
+#group2 .title .ladi-headline {
+    color: aliceblue !important;
+}
+
+#group2 .ladi-headline {
+    color: #2eefdd !important;
+}
+
+#groupa1 .title .ladi-headline {
+    color: aliceblue !important;
+}

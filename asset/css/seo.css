@@ -1,0 +1,260 @@
+#seo .introduce {
+    width: 100%;
+    height: 660px;
+    background-image: url("/asset/images/seo.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #323232;
+    font-weight: 500;
+    padding-left: 400px;
+    padding-top: 180px;
+}
+
+#seo .introduce .sub-service {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #F0A900;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#seo .introduce .title {
+    font-size: 56px;
+    line-height: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0B1456!important;
+}
+
+#seo .introduce .decription {
+    width: 500px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+#seo .introduce .get-receice-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    background: #f0a900;
+    border: 1px solid #f0a900;
+    width: 170px;
+    height: 50px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+
+#seo .introduce .get-receice-price:hover {
+    transition: transform 0.3s;
+    background: rgb(240 168 0 / 85%);
+    border: 1px solid rgb(240 168 0 / 85%);
+}
+
+#seo .introduce .get-receice-price a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#seo .description {
+    width: 100%;
+    background-image: url("/asset/images/Content-images-background.png");
+    display: flex;
+    justify-content: center;
+}
+
+#seo .description .description-position {
+    width: 70%;
+    height: 675px;
+    color: aliceblue;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accordion__title {
+    line-height: 0;
+    font-family: sans-serif;
+}
+
+#seo .description .description-position .position-label {
+    width: 40%;
+    padding-top: 100px;
+    margin-right: 50px;
+}
+
+#seo .description .description-position .position-label h2 {
+    font-size: 56px;
+    line-height: 70px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+}
+
+#seo .description .description-position .position-label p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#seo .description .description-position .position-content {
+    padding-bottom: 30px;
+    width: 60%;
+}
+
+.accordion-wrapper {
+    padding: 0px 20px;
+}
+
+.accordion {
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.accordion-body {
+    position: realtive;
+    transition: 0.5s all;
+}
+
+h1 {
+    font-family: 'roboto';
+    font-size: 48px;
+}
+
+.label {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 10px;
+    background-color: rgb(0 0 0 / 70%);
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    user-select: none;
+}
+
+.label {}
+
+.label:before {
+    content: '+';
+    top: 50%;
+    transform: translatey(-50%);
+    right: 15px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.accordion-content {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 300;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgb(0 0 0 / 40%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordion-body.active .accordion-content {
+    height: auto;
+}
+
+.accordion-body.active .label:before {
+    content: '-';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#seo .entry-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seo .entry-content .entry-content-text {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 20px;
+    line-height: 24px;
+    color: #382c2cd9;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#seo .entry-content .entry-content-text p {
+    margin-block-end: 0.5em !important;
+    margin-block-start: 0.5em !important;
+    width: 100%;
+}
+
+#seo .entry-content .entry-content-text p a {
+    text-decoration: none;
+    color: rgb(240 168 0 / 85%);
+}
+
+#seo .entry-content .entry-content-text .img-writing {
+    background-image: url("/asset/images/viet-bai-quang-cao-seo.png");
+    width: 100%;
+    height: 438px;
+}
+
+#seo .entry-content .entry-content-text .img-benefit {
+    background-image: url("/asset/images/capture.png");
+    width: 728px;
+    height: 936px;
+}
+
+#seo .entry-content .entry-content-text .img-process {
+    background-image: url("/asset/images/viet-bai-quang-cao-seo-3.jpg");
+    width: 728px;
+    height: 930px;
+}
+
+#seo .entry-content .entry-content-text h2 {
+    font-size: 46px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+#seo .entry-content .entry-content-text ul {
+    margin-block-end: 0.5em !important;
+    margin-block-start: 0.5em !important;
+}
+
+#seo .entry-content .entry-content-text ul li {
+    margin-block-end: 0.5em !important;
+    margin-block-start: 0.5em !important;
+}
+
+#seo .entry-content .entry-content-text ul li .text-weight {
+    font-weight: 700;
+}
+
+#seo .entry-content .entry-content-text .link-contact {
+    color: rgb(240 168 0 / 85%);
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+}

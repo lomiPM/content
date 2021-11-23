@@ -14,17 +14,6 @@
     width: 100%;
 }
 
-.main-wapper-contents-contact .banner-img {
-    height: 194px;
-    background-image: url("/asset/images/detail-banner.jpg");
-    color: #FFF;
-    padding-top: 266px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    float: right;
-}
-
 .main-wapper-contact .custom_main_container {
     width: 80%;
     display: flex;
@@ -48,6 +37,7 @@
 .main-wapper-contact .custom_main_container .main-container-careers {
     width: 50%;
     padding-right: 40px;
+    margin-top: 50px;
 }
 
 .main-wapper-contact .custom_main_container .main-container-form .form-title {
@@ -73,9 +63,14 @@
     text-align: left;
 }
 
+.main-wapper-contact .custom_main_container .main-container-form .form-decription .decription ul li a {
+    text-decoration: none;
+    color: rgb(240 168 0 / 85%);
+}
+
 .main-wapper-contact .custom_main_container .main-container-form .form-content {
     width: 100%;
-    margin-top: 160px;
+    margin-top: 245px;
 }
 
 .main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input {
@@ -102,21 +97,35 @@
     outline: none;
 }
 
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-input textarea {
+    width: 98.3%;
+    height: 100px;
+    overflow-y: auto;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 1px solid #d2d7e1;
+    outline: none;
+}
+
 .main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-submit {
     width: 100%;
     height: 50px;
     margin-top: 25px;
-    background: #2b82ca;
+    background: #0d418f;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
 }
 
+.main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-submit:hover {
+    opacity: 0.7;
+}
+
 .main-wapper-contact .custom_main_container .main-container-form .form-content .form-content-submit .btn-submit {
-    background: #2b82ca;
-    border: 1px solid #2b82ca;
-    border-color: #2b82ca;
+    background: #0d418f;
+    border: 1px solid #0d418f;
+    border-color: #0d418f;
     font-size: 20px;
     color: #ffffff;
 }
@@ -130,7 +139,7 @@
     background-size: cover;
     width: 77%;
     float: right;
-    height: 40%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
